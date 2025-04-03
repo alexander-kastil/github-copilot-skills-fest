@@ -18,10 +18,10 @@
         // SQL extensions for EF Core/SQLite support
         "qwtel.sqlite-viewer",
         // General development extensions
-        "mdickin.markdown-shortcuts",
         "esbenp.prettier-vscode",
         "github.copilot",
-        "github.copilot-chat-insiders",
+        "github.copilot-chat",
+        "eamodio.gitlens",
         "streetsidesoftware.code-spell-checker",
         "humao.rest-client",
         "ms-vscode.powershell"
@@ -61,5 +61,5 @@
     5000,
     5001
   ],
-  "postCreateCommand": "if [ -f /usr/bin/pwsh ]; then pwsh -File ./.devcontainer/post-create.ps1; else bash ./.devcontainer/post-create.sh; fi"
+  "postCreateCommand": "bash ./.devcontainer/post-create.sh"
 }

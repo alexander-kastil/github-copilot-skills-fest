@@ -1,63 +1,21 @@
-# Development Container for Angular 19 and .NET 9
+# Development Container for Fitness App
 
-This development container provides a complete development environment for building applications with Angular 19 and .NET 9.
+This devcontainer configuration provides a complete development environment for the Fitness application that consists of:
 
-## Features
-
-- .NET 9 SDK
-- Node.js 20.12.2
-- Angular CLI 19
-- SQLite
-- GitHub CLI
-- VS Code Extensions for Angular and .NET development
+- Angular 19 frontend (fitness-ui)
+- .NET 9 Web API backend with Entity Framework Core and SQLite (fitness-api)
 
 ## Prerequisites
 
 - Docker Desktop
-- Visual Studio Code
-- VS Code Remote - Containers extension
+- Visual Studio Code with Remote - Containers extension
 
-## Usage
+## Features
 
-1. Clone your repository
-2. Copy the `.devcontainer` directory to your project root
-3. Open the project in VS Code
-4. When prompted, click "Reopen in Container" or run the "Remote-Containers: Reopen in Container" command
-
-## Container Contents
-
-The development container includes:
-
-- Base image: mcr.microsoft.com/devcontainers/dotnet:9.0
-- Node.js 20.12.2 with latest npm
-- Angular CLI 19
-- SQLite for database operations
-- GitHub CLI for repository management
-- Preconfigured VS Code extensions and settings
-
-## Customization
-
-You can customize the development container by:
-
-1. Modifying the `Dockerfile` to add additional tools
-2. Updating the `devcontainer.json` to:
-   - Add/remove VS Code extensions
-   - Change port forwarding
-   - Modify container settings
-
-## Port Forwarding
-
-The container forwards the following ports:
-
-- 4200: Angular development server
-- 5000: .NET API (HTTP)
-- 5001: .NET API (HTTPS)
-
-## Notes
-
-- The container is configured with UTC timezone
-- All necessary permissions are set for .NET and Node.js development
-- VS Code settings are optimized for Angular and .NET development
+- Node.js 20.12.2 for Angular 19 development
+- .NET 9 SDK for backend development
+- SQLite for database
+- VS Code extensions for both Angular and .NET development
 
 ## Getting Started
 
