@@ -19,8 +19,8 @@ Create a concise project overview including:
   ├── .ado/          # Azure DevOps pipeline configurations
   ├── infra/         # Infrastructure as Code and deployment scripts
   └── src/           # Source code and services
-      ├── api/
-      └── ui/
+      ├── service1/
+      └── plugins/
   ```
 - Quick start guide
 - Prerequisites
