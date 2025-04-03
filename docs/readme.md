@@ -40,7 +40,7 @@ This task install some Copilot Settings and Tools and establishes the foundation
 - Initial prompt to set up both .NET and Angular projects:
 
   ```prompt
-  I want to create a project that satisfies the requirements of docs/octofit_story.md and docs/mona-high-school-fitness-tracker.md The requirements are already installed on the machine. Add .gitignore to the two projects reflecting their stack. Stop after the scaffolding step.
+  I want to create a project that satisfies the requirements of docs/octofit_story.md and docs/mona-high-school-fitness-tracker.md The requirements are already installed on the machine. Stop after the scaffolding step.
   ```
 
 - Creating a development container configuration for consistent environments:
