@@ -33,15 +33,7 @@ This task establishes the foundation for our fitness tracking application accord
 - Initial prompt to set up both .NET and Angular projects:
 
   ```prompt
-  I want to create a project that satisfies the requirements of docs/octofit_story.md. The requirements are already installed on the machine, so Do not use && to chain commands
-  . The projects should be created in the src directory.
-
-  - .NET 9.0 Web API that uses Entity Framework Core and SQLit.
-  - Angular 19 App that acts as a frontend.
-
-  The .NET 9.0 Web API project should be created with the dotnet new webapi -n fitness-api command.
-
-  Create the .NET 9.0 Web API project (fitness-api) and the Angular 19 App project (fitness-ui). When creating the Angular Front use the angular cli with the ng new fitenss-ui --routing --style=scss --ssr=false command. After creating the Angular project, create angular environments using 'ng g environments' and add apiUrl to both environments. The apiUrl should be set to apiUrl="http://localhost:5000/"
+  I want to create a project that satisfies the requirements of docs/octofit_story.md and mona-high-school-fitness-tracker.md The requirements are already installed on the machine.
   ```
 
 - Adding proper gitignore files for both projects:
