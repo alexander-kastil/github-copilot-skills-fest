@@ -54,7 +54,4 @@ Generate instructions in this order
 
 Let's think about this step by step and generate the code in small steps.
 
-```
-
 ## Implement the Web Api
-```
