@@ -1,9 +1,8 @@
 # Prompt list
 
 - [ ] **Task 1**: Work with GitHub
-- [ ] **Task 2**: Project Setup including a devcontainer.json
-- [ ] **Task 2**: [Implement the Web Api using Vibe Coding](#task-2-configure-the-web-api)
-- [ ] **Task 3**: [Implement the Angular App using Vibe Coding](#task-3-configure-the-angular-app)
+- [ ] **Task 2**: Configure Copilot tooling and scaffold project structure
+- [ ] **Task 3**: Implement the Angular App using Vibe Coding
 - [ ] **Task 4**: [Add project documentation using a reusable prompt](#task-4-add-project-documentation-using-a-reusable-prompt)
 - [ ] **Task 5**: [Implement & Integrate a Playwright MCP (Model Context Protocol) Service](#task-5-implement--integrate-a-playwright-mcp-model-context-protocol-service)
 - [ ] **Task 6**: Implement tests using Vibe Coding
@@ -26,54 +25,33 @@ Create a new branch 'initial-setup' and switch to it
 
 > Note: At the end of task 2 we will merge the branch into main.
 
-## Task 2: Project Setup
+## Task 2: Setup Tooling
 
-This task establishes the foundation for our fitness tracking application according to `docs/octofit_story.md` by creating both the .NET API and Angular frontend projects according to the guides in `docs/mona-high-school-fitness-tracker.md`. It includes setting up proper project structures, defining development environments with devcontainer configurations, and establishing basic project hygiene like source control settings.
+```prompt
+Setup the coding instructions and tooling for the project mentioned in docs/mona-high-school-fitness-tracker.md
+```
+
+## Task 2: Configure Copilot tooling and scaffold project structure
+
+This task install some Copilot Settings and Tools and establishes the foundation for our fitness tracking application according to `docs/octofit_story.md` by creating both the .NET API and Angular frontend projects according to the guides in `docs/mona-high-school-fitness-tracker.md`. It includes setting up proper project structures, defining development environments with devcontainer configurations, and establishing basic project hygiene like source control settings.
 
 - Initial prompt to set up both .NET and Angular projects:
 
   ```prompt
-  I want to create a project that satisfies the requirements of docs/octofit_story.md and mona-high-school-fitness-tracker.md The requirements are already installed on the machine.
+  I want to create a project that satisfies the requirements of docs/octofit_story.md and docs/mona-high-school-fitness-tracker.md The requirements are already installed on the machine. Add .gitignore to the two projects reflecting their stack. Stop after scaffolding the projects.
   ```
-
-- Adding proper gitignore files for both projects:
-
-  ```prompt
-  Add .gitignore to the two projects reflecting their stack
-  ```
-
-- Add a `.github/copilot-instructions.md` from [assets](/prompts/assets/general/) file the defines general instructions for code generation and project specific instructions for Angular and .NET:
-
-  ```markdown
-  # Code Instructions
-
-  ## General
-
-  We write our code on a Windows Machine. Never use `&&` to chain commands. Always use separate commands.
-
-  ## Angular
-
-  We are using Angular 19. Always use functional implementation where possible
-
-  ## .NET
-
-  ```
-
-  > Note: Typically you would add issues to this file, when noticing unwanted code-generation behavior.
-
-- Run and commit to the main branch.
-
-- Explain Context. Mention that we will recycle the context soon. But before we will create a devcontainer.json file:
 
 - Creating a development container configuration for consistent environments:
 
   ```prompt
-  to finalize the initial setup create a devcontainer.json that is capable of running Angular 19 with min node 20.12.2 and the .net 9 sdk. Please look at my installed extensions and add the Angular and .NET related extensions to the devcontainer. Include the GitHub CLI and make sure the post-create script to ensure appropriate permissions are set during container startup
+  To finalize the initial setup create a devcontainer.json that is capable of running Angular 19 with min node 20.12.2 and the .NET 9 SDK. Look at my installed extensions and add the Angular and .NET related extensions to the devcontainer. Include the GitHub CLI and make sure the post-create script to ensure appropriate permissions are set during container startup
   ```
+
+> Note: Skip this step as we have already created the devcontainer.json to meet our 45 min time limit. Building the container image takes a while. The prompt is included for reference.
 
 - Run the `devcontainer` locally and using `GitHub CodeSpaces`
 
-## Task 2: Configure the Web Api
+## Task 3: Implement the Web Api
 
 This task focuses on setting up the back-end API functionality including data models, controllers, and database integration. It establishes the core business logic and data access layer that will serve student and exercise data to the Angular frontend.
 

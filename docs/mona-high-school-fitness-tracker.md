@@ -1,6 +1,35 @@
 # Getting started - app frontend and backend creation
 
-## Explain to GitHub Copilot the goals and steps
+## General Coding Instructions & Tools
+
+### Coding Instructions
+
+Add code generation instructions by creating .vscode/settings.json in the root of the project with the following content:
+
+```
+{
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+            "file": ".copilot.instructions.md"
+        }
+    ],
+    "github.copilot.chat.setupTests.enabled": true,
+    "github.copilot.chat.startDebugging.enabled": true,
+    "chat.commandCenter.enabled": true
+}
+```
+
+Copy `docs/assets/.copilot.instructions.md` to the root of the project.
+
+### Add reusable prompts
+
+Copy `docs/assets/create-docs.prompt.md` to .github/prompts/create-docs.prompt.md
+
+### Register the Playwright MCP Server
+
+Copy `docs/assets/mcp.json` to .vscode/mcp.json
+
+## Explain to GitHub Copilot the Goals and Steps & Scaffold the Projects
 
 ```text
 I want to build an monafit Tracker app that will include the following:
@@ -11,9 +40,7 @@ I want to build an monafit Tracker app that will include the following:
 * Competitive leader board
 * Personalized workout suggestions
 
-It should be in one app
-
-generate instructions in this order
+Generate instructions in this order
 
 1. Create the frontend and backend in the monafit-tracker directory structure of this repository in one command
 2. Setup backend (src/monafit-api) using .NET 9 and the dotnet cli using the webapi template
@@ -61,3 +88,5 @@ Layout the directory structure with no redundant backend and frontend subdirecto
 
 Let's think about this step by step
 ```
+
+### Implement the Web Api
