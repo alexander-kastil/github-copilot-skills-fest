@@ -39,16 +39,32 @@ Copy `docs/assets/create-docs.prompt.md` to .github/prompts/create-docs.prompt.m
 
 Copy `docs/assets/mcp.json` to .vscode/mcp.json
 
-## Task: Scaffold Projects
+## Technical Stack
 
 Generate instructions in this order
 
-1. Create the Angular Frontend and .NET backend in the src directory.
-2. Scaffold the backend (src/octofit-api) using .NET 9 and the dotnet cli using: dotnet new webapi -n octofit-api.
-3. In Programm.cs add configuration for the Swagger UI should to be visible at / implemented in the Swashbuckle.AspNetCore package
-4. The backend will use Entity Framework Core and SQL Lite for the database. Add the packages `Microsoft.EntityFrameworkCore` and `Microsoft.EntityFrameworkCore.Sqlite`
-5. Set the project launch settings to use port 5001 for https and 5000 for http. Add a CORS policy to allow all origins and methods.
-6. Scaffold the octofit-ui to src using the Angular CLI 19.2 and Node 20.12.2 using ng new octofit-ui --routing --ssr=false --style=scss . Add environment files using the Angular CLI and the `ng g environments` and add the following entry to both envrionments: apiUrl: "http://localhost:5000/api/". Install bootstrap and import it to the styles array in angular.json in the build and test configuration. Delete the content of the app.component.html and the text "Welcome to the OctoFit Tracker App" in a div.
+1. Frontend and Backend Setup
+
+   - Create a `src` directory for both projects
+   - Create `src/octofit-api` for the .NET backend
+   - Create `src/octofit-ui` for the Angular frontend
+
+2. Backend Setup (.NET)
+
+   - Use .NET 9 WebAPI template
+   - Configure Swagger UI at root endpoint
+   - Add Entity Framework Core with SQLite
+   - Configure ports: HTTPS (5001), HTTP (5000)
+   - Enable CORS for all origins
+
+3. Frontend Setup (Angular)
+   - Use Angular CLI 19.2 with Node 20.12.2
+   - Include routing
+   - Disable SSR
+   - Use SCSS styling
+   - Add environment configuration with API URL
+   - Install and configure Bootstrap
+   - Clean up default app component
 
 Let's think about this step by step and generate the code in small steps.
 
