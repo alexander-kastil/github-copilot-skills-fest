@@ -6,8 +6,16 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
+      # Mount the root folder that contains .git
       - ../:/workspace:cached
     command: sleep infinity
     environment:
       - NODE_ENV=development
+      # Uncomment the next line to override timezone (defaults to UTC)
+      # - TZ=your_timezone
     network_mode: host
+    # Uncomment to override default ports
+    # ports:
+    #   - "4200:4200"  # Angular dev server
+    #   - "5000:5000"  # .NET API HTTP
+    #   - "5001:5001"  # .NET API HTTPS
