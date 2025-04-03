@@ -1,7 +1,9 @@
 # Prompt list
 
 - [ ] **Task 1**: Work with GitHub
-- [ ] **Task 2**: Configure Copilot tooling and scaffold project structure
+- [ ] **Task 2**: Setup Tooling
+- [ ] **Task 3**: Scaffold project structure
+- [ ] **Task 3**: Implement the Web Api using Vibe Coding
 - [ ] **Task 3**: Implement the Angular App using Vibe Coding
 - [ ] **Task 4**: [Add project documentation using a reusable prompt](#task-4-add-project-documentation-using-a-reusable-prompt)
 - [ ] **Task 5**: [Implement & Integrate a Playwright MCP (Model Context Protocol) Service](#task-5-implement--integrate-a-playwright-mcp-model-context-protocol-service)
@@ -28,7 +30,7 @@ Create a new branch 'initial-setup' and switch to it
 ## Task 2: Setup Tooling
 
 ```prompt
-Setup the coding instructions and tooling for the project mentioned in docs/mona-high-school-fitness-tracker.md. Do not change any content of the files you copy. Stop after the setup of tooling.
+Setup the coding instructions and tooling for the project mentioned in docs/mona-high-school-fitness-tracker.md. Do not change any content of the files you copy. Stop after scaffolding the projects.
 ```
 
 ## Task 2: Configure Copilot tooling and scaffold project structure
