@@ -1,7 +1,7 @@
 # Prompt list
 
 - [ ] **Task 1**: Work with GitHub
-- [ ] **Task 1**: [Project Setup including a devcontainer.json](#task-1-project-setup)
+- [ ] **Task 2**: Project Setup including a devcontainer.json
 - [ ] **Task 2**: [Implement the Web Api using Vibe Coding](#task-2-configure-the-web-api)
 - [ ] **Task 3**: [Implement the Angular App using Vibe Coding](#task-3-configure-the-angular-app)
 - [ ] **Task 4**: [Add project documentation using a reusable prompt](#task-4-add-project-documentation-using-a-reusable-prompt)
@@ -21,10 +21,12 @@ The Tasks were executed by the GutHub Copilot Agent mostly using Claude Sonnet 3
 This task is an introduction to using GitHub Copilot in a collaborative environment. It covers creation of a branch, committing changes and creating pull requests.
 
 ```prompt
-Create a new branch 'initial-setup' and switch to it:
+Create a new branch 'initial-setup' and switch to it
 ```
 
-## Task 1: Project Setup
+> Note: At the end of task 2 we will merge the branch into main.
+
+## Task 2: Project Setup
 
 This task establishes the foundation for our fitness application by creating both the .NET API and Angular frontend projects. It includes setting up proper project structures, defining development environments with devcontainer configurations, and establishing basic project hygiene like source control settings.
 
