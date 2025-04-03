@@ -37,10 +37,16 @@ Setup the coding instructions and tooling for the project mentioned in docs/mona
 
 This task install some Copilot Settings and Tools and establishes the foundation for our fitness tracking application according to `docs/octofit_story.md` by creating both the .NET API and Angular frontend projects according to the guides in `docs/mona-high-school-fitness-tracker.md`. It includes setting up proper project structures, defining development environments with devcontainer configurations, and establishing basic project hygiene like source control settings.
 
+- Get a big picture of the project using the `docs/octofit_story.md` and `docs/mona-high-school-fitness-tracker.md` files:
+
+  ```prompt
+  Read the files docs/octofit_story.md and docs/mona-high-school-fitness-tracker.md and summarize the requirements of the project. Do not implement anything yet. Just get an overview of the requirements.
+  ```
+
 - Initial prompt to set up both .NET and Angular projects:
 
   ```prompt
-  In /src scaffold a .NET Webapi and one Angular project satisfies the requirements of docs/octofit_story.md and docs/mona-high-school-fitness-tracker.md The requirements are already installed on the machine. Stop after the scaffolding step.
+  Execute the scaffolding steps of docs/mona-high-school-fitness-tracker.md. Stop after the scaffolding steps.
   ```
 
 - Creating a development container configuration for consistent environments:

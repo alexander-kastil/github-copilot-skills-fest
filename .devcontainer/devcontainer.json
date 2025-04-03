@@ -20,7 +20,7 @@
         // General development extensions
         "mdickin.markdown-shortcuts",
         "esbenp.prettier-vscode",
-        "github.copilot",
+        "github.copilot-insiders",
         "github.copilot-chat",
         "eamodio.gitlens",
         "streetsidesoftware.code-spell-checker",

@@ -6,5 +6,6 @@
     ],
     "github.copilot.chat.setupTests.enabled": true,
     "github.copilot.chat.startDebugging.enabled": true,
-    "chat.commandCenter.enabled": true
+    "chat.commandCenter.enabled": true,
+    "git.ignoreLimitWarning": true
 }
