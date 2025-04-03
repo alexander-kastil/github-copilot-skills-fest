@@ -18,6 +18,7 @@
         // SQL extensions for EF Core/SQLite support
         "qwtel.sqlite-viewer",
         // General development extensions
+        "mdickin.markdown-shortcuts",
         "esbenp.prettier-vscode",
         "github.copilot",
         "github.copilot-chat-insiders",

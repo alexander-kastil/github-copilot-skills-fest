@@ -28,12 +28,12 @@ Create a new branch 'initial-setup' and switch to it
 
 ## Task 2: Project Setup
 
-This task establishes the foundation for our fitness application by creating both the .NET API and Angular frontend projects. It includes setting up proper project structures, defining development environments with devcontainer configurations, and establishing basic project hygiene like source control settings.
+This task establishes the foundation for our fitness tracking application according to `docs/octofit_story.md` by creating both the .NET API and Angular frontend projects according to the guides in `docs/mona-high-school-fitness-tracker.md`. It includes setting up proper project structures, defining development environments with devcontainer configurations, and establishing basic project hygiene like source control settings.
 
 - Initial prompt to set up both .NET and Angular projects:
 
   ```prompt
-  I want to create a project that uses the following services on a Windows host. The requirements are already installed on the machine, so Do not use && to chain commands
+  I want to create a project that satisfies the requirements of docs/octofit_story.md. The requirements are already installed on the machine, so Do not use && to chain commands
   . The projects should be created in the src directory.
 
   - .NET 9.0 Web API that uses Entity Framework Core and SQLit.
