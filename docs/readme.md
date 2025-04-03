@@ -46,7 +46,7 @@ This task install some Copilot Settings and Tools and establishes the foundation
 - Initial prompt to set up both .NET and Angular projects:
 
   ```prompt
-  Execute the scaffolding steps of docs/mona-high-school-fitness-tracker.md. Stop after the scaffolding steps.
+  Execute the steps mentioned in 'Task: Scaffold Projects' of docs/mona-high-school-fitness-tracker.md. Stop after this section.
   ```
 
 - Creating a development container configuration for consistent environments:
