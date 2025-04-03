@@ -50,7 +50,7 @@ Generate instructions in this order
 3. The webapi will use Entity Framework and SQL Lite for the database. Add the required Packages.
 4. The SQLite database octofit-db will be in root of the project. Include it in the \*.csproj file.
 5. Set the project launch settings to use port 5001 for https and 5000 for http. Add a CORS policy to allow all origins and methods.
-6. Scaffold the octofit-ui to src using the Angular CLI 19.2 and Node 20.12.2 using ng new octofit-ui --routing --ssr=false --style=scss . Add environment files using the Angular CLI and the `ng g environments` and add the following entry to both envrionments: apiUrl: "http://localhost:5000/api/". Overwrite the content of the app.component.html with the text "Welcome to the OctoFit Tracker App". Install bootstrap and import it to the styles array in angular.json in the build and test configuration.
+6. Scaffold the octofit-ui to src using the Angular CLI 19.2 and Node 20.12.2 using ng new octofit-ui --routing --ssr=false --style=scss . Add environment files using the Angular CLI and the `ng g environments` and add the following entry to both envrionments: apiUrl: "http://localhost:5000/api/". Install bootstrap and import it to the styles array in angular.json in the build and test configuration. Delete the content of the app.component.html and the text "Welcome to the OctoFit Tracker App" in a div.
 
 Let's think about this step by step and generate the code in small steps.
 
