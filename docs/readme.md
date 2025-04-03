@@ -23,12 +23,12 @@ This task is an introduction to using GitHub Copilot in a collaborative environm
 Create a new branch 'initial-setup' and switch to it
 ```
 
-> Note: At the end of task 2 we will merge the branch into main.
+> Note: At the end of task 3 we will merge the branch into main.
 
 ## Task 2: Setup Tooling
 
 ```prompt
-Setup the coding instructions and tooling for the project mentioned in docs/mona-high-school-fitness-tracker.md
+Setup the coding instructions and tooling for the project mentioned in docs/mona-high-school-fitness-tracker.md. Do not change any content of the files you copy. Stop after the setup of tooling.
 ```
 
 ## Task 2: Configure Copilot tooling and scaffold project structure
