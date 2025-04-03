@@ -49,7 +49,6 @@ Generate instructions in this order
 
 The directory tree for the octoFit Tracker App
 
-monafit-tracker
 ├── src
 │   ├── octofit-api
 │   │   ├── Controllers

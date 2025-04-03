@@ -40,7 +40,7 @@ This task install some Copilot Settings and Tools and establishes the foundation
 - Initial prompt to set up both .NET and Angular projects:
 
   ```prompt
-  Create a two projects that satisfies the requirements of docs/octofit_story.md and docs/mona-high-school-fitness-tracker.md The requirements are already installed on the machine. Stop after the scaffolding step.
+  In /src scaffold a .NET Webapi and one Angular project satisfies the requirements of docs/octofit_story.md and docs/mona-high-school-fitness-tracker.md The requirements are already installed on the machine. Stop after the scaffolding step.
   ```
 
 - Creating a development container configuration for consistent environments:
