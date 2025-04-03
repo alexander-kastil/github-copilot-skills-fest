@@ -40,7 +40,7 @@ This task install some Copilot Settings and Tools and establishes the foundation
 - Get a big picture of the project using the `docs/octofit_story.md` and `docs/mona-high-school-fitness-tracker.md` files:
 
   ```prompt
-  Read the files docs/octofit_story.md and docs/mona-high-school-fitness-tracker.md and summarize the requirements of the project. Do not implement anything yet. Just get an overview of the requirements.
+  Read the files docs/octofit_story.md and docs/mona-high-school-fitness-tracker.md and summarize the requirements of the project. Do not implement anything yet. Just get an overview of the requirements. Draw a directory tree of the project.
   ```
 
 - Initial prompt to set up both .NET and Angular projects:

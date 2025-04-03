@@ -48,7 +48,7 @@ Generate instructions in this order
 1. Create the Angular Frontend and .NET backend in the src directory.
 2. Scaffold the backend (src/octofit-api) using .NET 9 and the dotnet cli using the webapi template. Do not use the minimal api. Create explicit controller files in the Controllers folder. In the development environment, the Swagger UI should be visible at /.
 3. The webapi will use Entity Framework and SQL Lite for the database. Add the required Packages.
-4. The SQLite database octofit-db will be in root of the project. Include it in the \*.csproj file.
+4. The SQLite database octofit-db will be in root of the webapi project. Include it in the \*.csproj file.
 5. Set the project launch settings to use port 5001 for https and 5000 for http. Add a CORS policy to allow all origins and methods.
 6. Scaffold the octofit-ui to src using the Angular CLI 19.2 and Node 20.12.2 using ng new octofit-ui --routing --ssr=false --style=scss . Add environment files using the Angular CLI and the `ng g environments` and add the following entry to both envrionments: apiUrl: "http://localhost:5000/api/". Install bootstrap and import it to the styles array in angular.json in the build and test configuration. Delete the content of the app.component.html and the text "Welcome to the OctoFit Tracker App" in a div.
 
