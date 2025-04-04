@@ -3,16 +3,10 @@
 - [ ] **Task 1**: Work with GitHub
 - [ ] **Task 2**: Setup Tooling
 - [ ] **Task 3**: Scaffold project structure
-- [ ] **Task 3**: Implement the Web Api using Vibe Coding
-- [ ] **Task 3**: Implement the Angular App using Vibe Coding
-- [ ] **Task 5**: [Implement & Integrate a Playwright MCP (Model Context Protocol) Service](#task-5-implement--integrate-a-playwright-mcp-model-context-protocol-service)
-- [ ] **Task 6**: Implement tests using Vibe Coding
-- [ ] **Task 7**: Implement Bicep in infra folder using Vibe Coding(#task-7-implement-bicep-in-infra-folder-using-vibe-coding)
-- [ ] **Task 8**: Add a CI/CD pipeline using Azure DevOps
+- [ ] **Task 4**: Implement the Web Api using Vibe Coding
+- [ ] **Task 5**: Implement the Angular App using Vibe Coding
 
-> Note: Task 6-8 are not included in this repository. They are [GitHub Issues](https://github.com/alexander-kastil/copilot-skills-fest/issues) waiting to be addressed.
-
-The Tasks were executed by the GutHub Copilot Agent mostly using Claude Sonnet 3.7 with these [Visual Studio Code Settings](/prompts/assets/general/settings.json)
+The Tasks were executed by the GutHub Copilot Agent mostly using Claude Sonnet 3.5 with these [Visual Studio Code Settings](/prompts/assets/general/settings.json)
 
 ![settings](./images/agent.jpg)
 
@@ -78,7 +72,7 @@ Implement the requirements mentioned in '## Task: Implement the Web Api' of docs
 
 > Note: This prompt is also available in `.github/prompts/implement-api.prompt.md`.
 
-## Task 3: Configure the Angular App
+## Task 4: Configure the Angular App
 
 This task implements the front-end user interface by creating Angular components, services, and routing configurations. It establishes the connection between the Angular app and the .NET API, ensuring proper data display and user interaction.
 
@@ -122,7 +116,7 @@ This task implements the front-end user interface by creating Angular components
   still no output so please add terminal logging to the students component so you can examine it and fix the error
   ```
 
-## Task 4: Add project documentation using a reusable prompt
+## Task 5: Add project documentation using a reusable prompt
 
 This task improves the project's documentation by leveraging reusable GitHub Copilot prompts. It demonstrates how to create, attach, and utilize custom prompts to generate comprehensive documentation for the application.
 
@@ -138,7 +132,7 @@ This task improves the project's documentation by leveraging reusable GitHub Cop
 
   ![prompt](./images/use-prompt.jpg)
 
-## Task 5: Implement & Integrate a Playwright MCP (Model Context Protocol) Service
+## Task 6: Implement & Integrate a Playwright MCP (Model Context Protocol) Service
 
 This task enhances the development workflow by adding Playwright MCP capabilities that allow GitHub Copilot to interact with the application through a browser. It demonstrates the power of AI-assisted development with visual context awareness for more sophisticated application testing and development.
 
