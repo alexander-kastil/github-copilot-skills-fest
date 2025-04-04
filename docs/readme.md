@@ -20,9 +20,9 @@ Create a new branch 'initial-setup' and switch to it
 
 > Note: At the end of task 3 we will merge the branch into main.
 
-## Task 2: Setup Tooling
+## Task 2: Setup Coding Instructions & Tooling
 
-- Setup the project tooling:
+This task install some Copilot Settings and Tools and establishes the foundation for our fitness tracking application according to `docs/octofit_story.md`
 
 ```prompt
 Setup the coding instructions and tooling for the project mentioned in docs/mona-high-school-fitness-tracker.md. Do not change any content of the files you copy. Stop after scaffolding the projects.
@@ -40,9 +40,11 @@ Create the devcontainer for the project.
 
 - Run the `devcontainer` in `GitHub CodeSpaces`: Codespaces: Connect to Codespace. This will create a new Codespace and open the project in the container.
 
-## Task 2: Configure Copilot tooling and scaffold project structure
+## Task 2: Scaffold project structure
 
-This task install some Copilot Settings and Tools and establishes the foundation for our fitness tracking application according to `docs/octofit_story.md` by creating both the .NET API and Angular frontend projects according to the guides in `docs/mona-high-school-fitness-tracker.md`. It includes setting up proper project structures, defining development environments with devcontainer configurations, and establishing basic project hygiene like source control settings.
+Create both the .NET API and Angular frontend projects according to the guides in `docs/mona-high-school-fitness-tracker.md`.
+
+It includes setting up proper project structures, defining development environments with devcontainer configurations, and establishing basic project hygiene like source control settings.
 
 - Get a big picture of the project using the `docs/octofit_story.md` and `docs/mona-high-school-fitness-tracker.md` files:
 

@@ -10,35 +10,6 @@ I want to build an OctoFit Tracker app that will include the following:
 - Competitive leader board
 - Personalized workout suggestions
 
-## Task: General Coding Instructions & Tools
-
-### Coding Instructions
-
-Add code generation instructions by creating .vscode/settings.json in the root of the project with the following content:
-
-```json
-{
-    "github.copilot.chat.codeGeneration.instructions": [
-        {
-            "file": ".copilot.instructions.md"
-        }
-    ],
-    "github.copilot.chat.setupTests.enabled": true,
-    "github.copilot.chat.startDebugging.enabled": true,
-    "chat.commandCenter.enabled": true
-}
-```
-
-Copy `docs/assets/.copilot.instructions.md` to the root of the project.
-
-### Add reusable prompts
-
-Copy `docs/assets/prompts/*.prompt.md` to `.github/prompts/*.prompt.md`
-
-### Register the Playwright MCP Server
-
-Copy `docs/assets/mcp.json` to .vscode/mcp.json
-
 ## Technical Stack
 
 Generate instructions in this order
@@ -71,7 +42,38 @@ Generate instructions in this order
 
 Let's think about this step by step and generate the code in small steps.
 
-## Task: Implement the Web Api
+## Task: Setup Coding Instructions & Tooling
+
+### Coding Instructions
+
+Add code generation instructions by creating .vscode/settings.json in the root of the project with the following content:
+
+```json
+{
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+            "file": ".copilot.instructions.md"
+        }
+    ],
+    "github.copilot.chat.setupTests.enabled": true,
+    "github.copilot.chat.startDebugging.enabled": true,
+    "chat.commandCenter.enabled": true
+}
+```
+
+Copy `docs/assets/.copilot.instructions.md` to the root of the project.
+
+### Add reusable prompts
+
+Copy `docs/assets/prompts/*.prompt.md` to `.github/prompts/*.prompt.md`
+
+### Register the Playwright MCP Server
+
+Copy `docs/assets/mcp.json` to .vscode/mcp.json
+
+## Task 2: Scaffold project structure
+
+## Task 3: Implement the Web Api
 
 ### SQLite Database, Entity Framework Core and Database Context
 
