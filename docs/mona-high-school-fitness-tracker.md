@@ -16,7 +16,7 @@ I want to build an OctoFit Tracker app that will include the following:
 
 Add code generation instructions by creating .vscode/settings.json in the root of the project with the following content:
 
-```
+```json
 {
     "github.copilot.chat.codeGeneration.instructions": [
         {
@@ -52,10 +52,11 @@ Generate instructions in this order
 2. Backend Setup (.NET)
 
    - Use .NET 9 WebAPI template
-   - Configure Swagger UI at root endpoint
+   - Configure UseSwaggerUI to use an empty string route prefix in the Development environment
    - Add Entity Framework Core with SQLite
    - Configure ports: HTTPS (5001), HTTP (5000)
    - Enable CORS for all origins
+   - Implement a .NET specific .gitignore file in the root of the project
 
 3. Frontend Setup (Angular)
    - Use Angular CLI 19.2 with Node 20.12.2
@@ -65,6 +66,7 @@ Generate instructions in this order
    - Add environment configuration with API URL
    - Install and configure Bootstrap
    - Clean up default app component
+   - Implement an Angular specific .gitignore file in the root of the project
 
 Let's think about this step by step and generate the code in small steps.
 

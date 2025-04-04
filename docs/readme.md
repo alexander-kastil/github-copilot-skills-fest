@@ -60,6 +60,12 @@ This task install some Copilot Settings and Tools and establishes the foundation
   Execute the steps mentioned in 'Task: Scaffold Projects' of docs/mona-high-school-fitness-tracker.md. Stop after this section.
   ```
 
+- Check the outcome of the scaffolding process. Run the `octofit-api`
+
+  ```prompt
+  The octofit-api is already running. Navigate to `http://localhost:5000/` using the browser and describe the result. Check if the default WeatherForecast method is present. Navigate to http://localhost:5000/weatherforecast and describe the json.
+  ```
+
 ## Task 3: Implement the Web Api
 
 This task focuses on setting up the back-end API functionality including data models, controllers, and database integration. It establishes the core business logic and data access layer that will serve student and exercise data to the Angular frontend.
