@@ -28,9 +28,21 @@ Create a new branch 'initial-setup' and switch to it
 
 ## Task 2: Setup Tooling
 
+- Setup the project tooling:
+
 ```prompt
 Setup the coding instructions and tooling for the project mentioned in docs/mona-high-school-fitness-tracker.md. Do not change any content of the files you copy. Stop after scaffolding the projects.
 ```
+
+- Create a development container configuration for consistent environments and easy onboarding of new team members add the re-usable prompt `create-dev-container.prompt.md`:
+
+> Note: Skip this step as we have already created the devcontainer.json to meet our 45 min time limit. Building the container image takes a while. The prompt is included for reference.
+
+```prompt
+Create the devcontainer
+```
+
+- Run the `devcontainer` locally and using `GitHub CodeSpaces`
 
 ## Task 2: Configure Copilot tooling and scaffold project structure
 
@@ -47,16 +59,6 @@ This task install some Copilot Settings and Tools and establishes the foundation
   ```prompt
   Execute the steps mentioned in 'Task: Scaffold Projects' of docs/mona-high-school-fitness-tracker.md. Stop after this section.
   ```
-
-- Creating a development container configuration for consistent environments:
-
-  ```prompt
-  To finalize the initial setup create a devcontainer.json that is capable of running Angular 19 with min node 20.12.2 and the .NET 9 SDK. Look at my installed extensions and add the Angular and .NET related extensions to the devcontainer. Include the GitHub CLI and make sure the post-create script to ensure appropriate permissions are set during container startup
-  ```
-
-> Note: Skip this step as we have already created the devcontainer.json to meet our 45 min time limit. Building the container image takes a while. The prompt is included for reference.
-
-- Run the `devcontainer` locally and using `GitHub CodeSpaces`
 
 ## Task 3: Implement the Web Api
 

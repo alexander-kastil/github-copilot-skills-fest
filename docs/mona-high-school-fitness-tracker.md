@@ -33,7 +33,7 @@ Copy `docs/assets/.copilot.instructions.md` to the root of the project.
 
 ### Add reusable prompts
 
-Copy `docs/assets/create-docs.prompt.md` to .github/prompts/create-docs.prompt.md
+Copy `docs/assets/prompts/*.prompt.md` to `.github/prompts/*.prompt.md`
 
 ### Register the Playwright MCP Server
 
