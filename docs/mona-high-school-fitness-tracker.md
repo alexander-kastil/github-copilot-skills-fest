@@ -69,3 +69,42 @@ Generate instructions in this order
 Let's think about this step by step and generate the code in small steps.
 
 ## Task: Implement the Web Api
+
+### SQLite Database, Entity Framework Core and Database Context
+
+- This app is using a SQLite database using Entity Framework Core with a `OctoFitDbContext` class that will be registered in `Program.cs`.
+
+The data models for the OctoFit Tracker consist of the following entities. The app does not use DTO's and the models are used directly in the API. The models are defined in the `Models` folder of the API project. The models are:
+
+1. **User Model**
+
+   - Unique identifier (GUID)
+   - Username (required, max 100 characters)
+   - Email address (required, valid email format)
+   - Password (required, max 100 characters)
+
+2. **Team Model**
+
+   - Unique identifier (GUID)
+   - Team name (required, max 100 characters)
+   - Collection of team members (Users)
+
+3. **Activity Model**
+
+   - Unique identifier (GUID)
+   - User reference (required, foreign key)
+   - Activity type (required, max 100 characters)
+   - Duration (required, TimeSpan)
+
+4. **Leaderboard Model**
+
+   - Unique identifier (GUID)
+   - User reference (required, foreign key)
+   - Score (required, integer)
+
+5. **Workout Model**
+   - Unique identifier (GUID)
+   - Workout name (required, max 100 characters)
+   - Workout description (optional)
+
+- When creating the `OctoFitDbContext`, and additional Table 'Flags' is created. The table is used to store the flags for the application like a flag that will be used to ensure that the database is seeded only once with the initial data which will be provided in `docs/assets/seeding_data.json`

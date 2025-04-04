@@ -1,0 +1,135 @@
+{
+  "users": [
+    {
+      "id": "67ef83856aeb0236d95c3b41",
+      "username": "thundergod",
+      "email": "thundergod@mhigh.edu",
+      "password": "thundergodpassword"
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b42",
+      "username": "metalgeek",
+      "email": "metalgeek@mhigh.edu",
+      "password": "metalgeekpassword"
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b43",
+      "username": "zerocool",
+      "email": "zerocool@mhigh.edu",
+      "password": "zerocoolpassword"
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b44",
+      "username": "crashoverride",
+      "email": "crashoverride@hmhigh.edu",
+      "password": "crashoverridepassword"
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b45",
+      "username": "sleeptoken",
+      "email": "sleeptoken@mhigh.edu",
+      "password": "sleeptokenpassword"
+    }
+  ],
+  "teams": [
+    {
+      "id": "67ef83856aeb0236d95c3b46",
+      "name": "Blue Team"
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b47",
+      "name": "Gold Team"
+    }
+  ],
+  "activities": [
+    {
+      "id": "67ef83856aeb0236d95c3b48",
+      "user_id": 0,
+      "activity_type": "Cycling",
+      "duration_hours": 1,
+      "duration_minutes": 0
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b49",
+      "user_id": 1,
+      "activity_type": "Crossfit",
+      "duration_hours": 2,
+      "duration_minutes": 0
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b4a",
+      "user_id": 2,
+      "activity_type": "Running",
+      "duration_hours": 1,
+      "duration_minutes": 30
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b4b",
+      "user_id": 3,
+      "activity_type": "Strength",
+      "duration_hours": 0,
+      "duration_minutes": 30
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b4c",
+      "user_id": 4,
+      "activity_type": "Swimming",
+      "duration_hours": 1,
+      "duration_minutes": 15
+    }
+  ],
+  "leaderboard_entries": [
+    {
+      "id": "67ef83856aeb0236d95c3b4d",
+      "user_id": 0,
+      "score": 100
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b4e",
+      "user_id": 1,
+      "score": 90
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b4f",
+      "user_id": 2,
+      "score": 95
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b50",
+      "user_id": 3,
+      "score": 85
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b51",
+      "user_id": 4,
+      "score": 80
+    }
+  ],
+  "workouts": [
+    {
+      "id": "67ef83856aeb0236d95c3b52",
+      "name": "Cycling Training",
+      "description": "Training for a road cycling event"
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b53",
+      "name": "Crossfit",
+      "description": "Training for a crossfit competition"
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b54",
+      "name": "Running Training",
+      "description": "Training for a marathon"
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b55",
+      "name": "Strength Training",
+      "description": "Training for strength"
+    },
+    {
+      "id": "67ef83856aeb0236d95c3b56",
+      "name": "Swimming Training",
+      "description": "Training for a swimming competition"
+    }
+  ]
+}

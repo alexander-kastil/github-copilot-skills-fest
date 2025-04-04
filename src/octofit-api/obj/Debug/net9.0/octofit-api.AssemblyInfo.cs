@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("octofit-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d810892e988d647ec2c85ad2b89e16069e1bafa9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd4e745ab575c162fb322770a108453cb3d0178f")]
 [assembly: System.Reflection.AssemblyProductAttribute("octofit-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("octofit-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
