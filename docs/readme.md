@@ -5,7 +5,6 @@
 - [ ] **Task 3**: Scaffold project structure
 - [ ] **Task 3**: Implement the Web Api using Vibe Coding
 - [ ] **Task 3**: Implement the Angular App using Vibe Coding
-- [ ] **Task 4**: [Add project documentation using a reusable prompt](#task-4-add-project-documentation-using-a-reusable-prompt)
 - [ ] **Task 5**: [Implement & Integrate a Playwright MCP (Model Context Protocol) Service](#task-5-implement--integrate-a-playwright-mcp-model-context-protocol-service)
 - [ ] **Task 6**: Implement tests using Vibe Coding
 - [ ] **Task 7**: Implement Bicep in infra folder using Vibe Coding(#task-7-implement-bicep-in-infra-folder-using-vibe-coding)
