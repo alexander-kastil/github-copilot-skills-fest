@@ -74,7 +74,7 @@ Let's think about this step by step and generate the code in small steps.
 
 ### SQLite Database, Entity Framework Core and Database Context
 
-- This app is using a SQLite database using Entity Framework Core with a `OctoFitDbContext` class that will be registered in `Program.cs`.
+- This app is using a SQLite database using Entity Framework Core with a `OctoFitDbContext` class that will be registered in `Program.cs`. For simplicity, the database will be create in the `/db/octofit.db` path of the project. appsettings.json will be used to configure the database connection string. The database will be created automatically when the application starts.
 
 The data models for the OctoFit Tracker consist of the following entities. The app does not use DTO's and the models are used directly in the API. The models are defined in the `Models` folder of the API project. The models are:
 
@@ -110,3 +110,12 @@ The data models for the OctoFit Tracker consist of the following entities. The a
    - Workout description (optional)
 
 - When creating the `OctoFitDbContext`, and additional Table 'Flags' is created. The table is used to store the flags for the application like a flag that will be used to ensure that the database is seeded only once with the initial data which will be provided in `docs/assets/seeding_data.json`
+
+### Controller implementation
+
+- The API will have a separate controllers for each model. The `OctoFitDbContext` will be injected in the constructor of each controller. For each controller, the following methods will be implemented:
+- `GetAll` - Get all records of the model
+- `GetById` - Get a record by id
+- `Create` - Create a new record
+- `Update` - Update an existing record
+- `Delete` - Delete a record by id
