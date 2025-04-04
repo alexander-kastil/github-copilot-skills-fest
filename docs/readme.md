@@ -34,15 +34,17 @@ Create a new branch 'initial-setup' and switch to it
 Setup the coding instructions and tooling for the project mentioned in docs/mona-high-school-fitness-tracker.md. Do not change any content of the files you copy. Stop after scaffolding the projects.
 ```
 
-- Create a development container configuration for consistent environments and easy onboarding of new team members add the re-usable prompt `create-dev-container.prompt.md`:
+- Create a development container configuration for consistent environments and easy onboarding of new team members by attaching the re-usable prompt `create-dev-container.prompt.md` with the paperclip icon in the GitHub Copilot chat:
 
 > Note: Skip this step as we have already created the devcontainer.json to meet our 45 min time limit. Building the container image takes a while. The prompt is included for reference.
 
 ```prompt
-Create the devcontainer
+Create the devcontainer for the project.
 ```
 
-- Run the `devcontainer` locally and using `GitHub CodeSpaces`
+- Run the `devcontainer` locally using `Dev Containers: Open Workspace in Container`. This will build the container image and start the container.
+
+- Run the `devcontainer` in `GitHub CodeSpaces`: Codespaces: Connect to Codespace. This will create a new Codespace and open the project in the container.
 
 ## Task 2: Configure Copilot tooling and scaffold project structure
 
