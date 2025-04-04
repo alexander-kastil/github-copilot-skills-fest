@@ -68,62 +68,11 @@ This task install some Copilot Settings and Tools and establishes the foundation
 
 ## Task 3: Implement the Web Api
 
-This task focuses on setting up the back-end API functionality including data models, controllers, and database integration. It establishes the core business logic and data access layer that will serve student and exercise data to the Angular frontend.
+This task focuses on setting up the back-end API functionality including data models, controllers, and database integration. It establishes the core business logic and data access layer that will serve student and exercise data to the Angular frontend. Details are defined in `docs/mona-high-school-fitness-tracker.md`
 
-- Configuring the API ports and environment:
-
-  ```prompt
-  Set the http port to 5000 and the https port to 5001 in the launchSettings.json file. Make sure to set the environment variable ASPNETCORE_ENVIRONMENT to Development.
-  ```
-
-- Setting up the database context for the API:
-
-  ```prompt
-  Add support for entity framework and Sqlite. Create a FitnessDBContext and register it in Program.cs
-  ```
-
-- Creating data models for the fitness application:
-
-  ```prompt
-  Next lets create a model for the fitness app:
-
-  Lets add a Student model with the following properties:
-
-  - Id (int, primary key)
-  - FirstName (string, required)
-  - LastName (string, required)
-  - DateOfBirth (DateTime, required)
-
-  Lets add an Exercise model with the following properties:
-
-  - Id (int, primary key)
-  - StudentId (int, foreign key to Student)
-  - Date (DateTime, required)
-  - Duration (int, required, in minutes)
-  - Comments (string, optional)
-
-  Register the models in the FitnessDBContext. Seed it with 3 sample students and 3 sample exercises for each student.
-  ```
-
-- Implementing API controllers and endpoints:
-
-  ```prompt
-  Add an ExerciseController to the fitness-api project. The controller should have the following endpoints:
-
-  - Get /Students: Get all students
-  - GET /Students/{id}: Get a student by id
-  - GET /api/exercises: Get all exercises
-  - POST /api/exercises: Create a new exercise
-
-  Register the Controller in Program.cs to ensure it is available for dependency injection and routing. Inject the FitnessDBContext into the controller.
-  Make sure a Swagger UI is available for the API. In the Development environment the Swagger UI should be available at /.
-  ```
-
-- Creating HTTP request tests for the API:
-
-  ```prompt
-  Add a REST Client test-controller.http to test the different methods of the controller
-  ```
+```prompt
+Implement the requirements mentioned in '## Task: Implement the Web Api' of docs/mona-high-school-fitness-tracker.md. Do nothing else and stop after this section.
+```
 
 ## Task 3: Configure the Angular App
 
