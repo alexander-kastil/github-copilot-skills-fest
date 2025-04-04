@@ -76,6 +76,8 @@ This task focuses on setting up the back-end API functionality including data mo
 Implement the requirements mentioned in '## Task: Implement the Web Api' of docs/mona-high-school-fitness-tracker.md. Do nothing else and stop after this section. Before starting the implementation, share your plan. Complete you work by running 'dotnet build' and fix all errors.
 ```
 
+> Note: This prompt is also available in `.github/prompts/implement-api.prompt.md`.
+
 ## Task 3: Configure the Angular App
 
 This task implements the front-end user interface by creating Angular components, services, and routing configurations. It establishes the connection between the Angular app and the .NET API, ensuring proper data display and user interaction.
