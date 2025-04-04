@@ -109,7 +109,7 @@ The data models for the OctoFit Tracker consist of the following entities. The a
    - Workout name (required, max 100 characters)
    - Workout description (optional)
 
-- When creating the `OctoFitDbContext`, and additional Table 'Flags' is created. The table is used to store the flags for the application like a flag that will be used to ensure that the database is seeded only once with the initial data which will be provided in `docs/assets/seeding_data.json`
+- When creating the `OctoFitDbContext`, use `OnModelCreating` to configure seeding data provided in `docs/assets/seeding_data.json`.
 
 ### Controller implementation
 

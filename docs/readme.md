@@ -78,26 +78,6 @@ Implement the requirements mentioned in '## Task: Implement the Web Api' of docs
 
 This task implements the front-end user interface by creating Angular components, services, and routing configurations. It establishes the connection between the Angular app and the .NET API, ensuring proper data display and user interaction.
 
-- Add Angular project specific Copilot settings using .vscode/settings.json. Take the content from [assets](/prompts/assets/angular/):
-
-  ```json
-  {
-      "github.copilot.chat.codeGeneration.instructions": [
-          {
-              "file": ".angular.copilot.md"
-          }
-      ],
-      "github.copilot.chat.testGeneration.instructions": [
-          {
-              "file": ".angular.tests.copilot.md"
-          }
-      ],
-      "github.copilot.chat.setupTests.enabled"   : true,
-      "github.copilot.chat.startDebugging.enabled": true,
-      "chat.commandCenter.enabled": true,
-  }
-  ```
-
 - Creating the component structure and navigation for the Angular app:
 
   ```prompt
