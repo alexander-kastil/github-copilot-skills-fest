@@ -113,7 +113,7 @@ The data models for the OctoFit Tracker consist of the following entities. The a
 
 ### Controller implementation
 
-- The API will have a separate controllers for each model. The `OctoFitDbContext` will be injected in the constructor of each controller. For each controller, the following methods will be implemented:
+- The API will have a separate controllers for each model. The `OctoFitDbContext` will be injected in the constructor of each controller. For each controller, the following methods will be implemented using the above models:
 - `GetAll` - Get all records of the model
 - `GetById` - Get a record by id
 - `Create` - Create a new record
