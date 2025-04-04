@@ -44,64 +44,64 @@
   "activities": [
     {
       "id": "67ef83856aeb0236d95c3b48",
-      "user_id": 0,
-      "activity_type": "Cycling",
-      "duration_hours": 1,
-      "duration_minutes": 0
+      "userId": 0,
+      "activityType": "Cycling",
+      "durationHours": 1,
+      "durationMinutes": 0
     },
     {
       "id": "67ef83856aeb0236d95c3b49",
-      "user_id": 1,
-      "activity_type": "Crossfit",
-      "duration_hours": 2,
-      "duration_minutes": 0
+      "userId": 1,
+      "activityType": "Crossfit",
+      "durationHours": 2,
+      "durationMinutes": 0
     },
     {
       "id": "67ef83856aeb0236d95c3b4a",
-      "user_id": 2,
-      "activity_type": "Running",
-      "duration_hours": 1,
-      "duration_minutes": 30
+      "userId": 2,
+      "activityType": "Running",
+      "durationHours": 1,
+      "durationMinutes": 30
     },
     {
       "id": "67ef83856aeb0236d95c3b4b",
-      "user_id": 3,
-      "activity_type": "Strength",
-      "duration_hours": 0,
-      "duration_minutes": 30
+      "userId": 3,
+      "activityType": "Strength",
+      "durationHours": 0,
+      "durationMinutes": 30
     },
     {
       "id": "67ef83856aeb0236d95c3b4c",
-      "user_id": 4,
-      "activity_type": "Swimming",
-      "duration_hours": 1,
-      "duration_minutes": 15
+      "userId": 4,
+      "activityType": "Swimming",
+      "durationHours": 1,
+      "durationMinutes": 15
     }
   ],
-  "leaderboard_entries": [
+  "leaderboardEntries": [
     {
       "id": "67ef83856aeb0236d95c3b4d",
-      "user_id": 0,
+      "userId": 0,
       "score": 100
     },
     {
       "id": "67ef83856aeb0236d95c3b4e",
-      "user_id": 1,
+      "userId": 1,
       "score": 90
     },
     {
       "id": "67ef83856aeb0236d95c3b4f",
-      "user_id": 2,
+      "userId": 2,
       "score": 95
     },
     {
       "id": "67ef83856aeb0236d95c3b50",
-      "user_id": 3,
+      "userId": 3,
       "score": 85
     },
     {
       "id": "67ef83856aeb0236d95c3b51",
-      "user_id": 4,
+      "userId": 4,
       "score": 80
     }
   ],

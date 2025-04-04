@@ -73,7 +73,7 @@ This task install some Copilot Settings and Tools and establishes the foundation
 This task focuses on setting up the back-end API functionality including data models, controllers, and database integration. It establishes the core business logic and data access layer that will serve student and exercise data to the Angular frontend. Details are defined in `docs/mona-high-school-fitness-tracker.md`
 
 ```prompt
-Implement the requirements mentioned in '## Task: Implement the Web Api' of docs/mona-high-school-fitness-tracker.md. Do nothing else and stop after this section. Before starting the implementation, share your plan.
+Implement the requirements mentioned in '## Task: Implement the Web Api' of docs/mona-high-school-fitness-tracker.md. Do nothing else and stop after this section. Before starting the implementation, share your plan. Complete you work by running 'dotnet build' and fix all errors.
 ```
 
 ## Task 3: Configure the Angular App

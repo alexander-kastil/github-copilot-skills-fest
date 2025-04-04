@@ -57,6 +57,7 @@ Generate instructions in this order
    - Configure ports: HTTPS (5001), HTTP (5000)
    - Enable CORS for all origins
    - Implement a .NET specific .gitignore file in the root of the project
+   - Root namespace should be `OctoFitApi`
 
 3. Frontend Setup (Angular)
    - Use Angular CLI 19.2 with Node 20.12.2
@@ -74,7 +75,7 @@ Let's think about this step by step and generate the code in small steps.
 
 ### SQLite Database, Entity Framework Core and Database Context
 
-- This app is using a SQLite database using Entity Framework Core with a `OctoFitDbContext` class that will be registered in `Program.cs`. For simplicity, the database will be create in the `/db/octofit.db` path of the project. appsettings.json will be used to configure the database connection string. The database will be created automatically when the application starts.
+- This app is using a SQLite database using Entity Framework Core with a `OctoFitDbContext` class that will be registered in `Program.cs`. For simplicity, the database will be create in `src/octofit-api/octofit.db` path of the project. appsettings.json will be used to configure the database connection string. The database will be created automatically when the application starts.
 
 The data models for the OctoFit Tracker consist of the following entities. The app does not use DTO's and the models are used directly in the API. The models are defined in the `Models` folder of the API project. The models are:
 
@@ -109,7 +110,11 @@ The data models for the OctoFit Tracker consist of the following entities. The a
    - Workout name (required, max 100 characters)
    - Workout description (optional)
 
-- When creating the `OctoFitDbContext`, use `OnModelCreating` to configure seeding data provided in `docs/assets/seeding_data.json`.
+Copy seeding data provided in `docs/assets/seeding_data.json` to the root of the project. Do not change any content of the file. Modify the \*.csproj file to include the seeding data in the project in an ItemGroup.
+
+- When creating the `OctoFitDbContext`, use `OnModelCreating` to configure the models and seed the database with the data from `seeding_data.json`.
+
+- Implement other Entity Related Task in the `OctoFitDbContext` class if possible.
 
 ### Controller implementation
 
