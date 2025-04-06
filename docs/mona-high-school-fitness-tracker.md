@@ -27,6 +27,7 @@ Generate instructions in this order
    - Add Entity Framework Core with SQLite
    - Configure ports: HTTPS (5001), HTTP (5000)
    - Enable CORS for all origins
+   - Do not use app.UseHttpsRedirection();
    - Implement a .NET specific .gitignore file in the root of the project
    - Root namespace should be `OctoFitApi`
 
@@ -71,9 +72,7 @@ Copy `docs/assets/prompts/*.prompt.md` to `.github/prompts/*.prompt.md`
 
 Copy `docs/assets/mcp.json` to .vscode/mcp.json
 
-## Task 2: Scaffold project structure
-
-## Task 3: Implement the Web Api
+## Task 2: Implement the Web Api
 
 ### SQLite Database, Entity Framework Core and Database Context
 
@@ -129,11 +128,15 @@ Our serialization format is camelCase. Configure it in Program.cs
 - `Update` - Update an existing record
 - `Delete` - Delete a record by id
 
-## Task: Implement the Angular Frontend
+## Task 3: Implement the Angular Frontend
+
+### Home Component
+
+- The home page will be implemented in the `src/octofit-ui/src/app/home` folder and will be available in the root path. The home page will display a welcome message and a centered image of the OctoFit logo. The image will be stored in the `src/octofit-ui/src/public` folder. The home page will be styled using Bootstrap and will be responsive.
 
 ### Artifacts Scaffolding
 
-For each .net model, create a corresponding Angular client side mode. Initialize each property. Example:
+For each .net model, create a corresponding Angular client side model. Match the properties exactly using camelCase. Initialize each property. Example:
 
 src/octofit-ui/src/app/user/user.model.ts
 
@@ -152,7 +155,7 @@ Each service will have the following methods:
 - `update` - Update an existing record
 - `delete` - Delete a record by id
 
-#### Base Component
+#### List Component
 
 - The container component will display the data in a simple bootstrap striped table.
 
@@ -164,24 +167,48 @@ Each service will have the following methods:
 
 #### Edit Component
 
-- The edit component will display a form with the properties of the model. The form will be implemented using the Reactive Forms module. The form will have a submit button that will call the create or update method of the service depending on the mode (create or edit). The form will be validated using Angular's built-in validators.
+- The edit component will display a form with the properties of the model. The form will be implemented using the Reactive Forms module. The form will have a submit button that will call the create or update method of the service depending on the mode (create or edit). The form will be validated using Angular's built-in validators. Use the exact property name for the form controls.
 
-- To get the value of the form use Component Input Binding: Here is an example of how to implement the UserEditComponent. The user will also available available as a signal as we are using declarative binding.
+- To get the value of the form use Component Input Binding: Here is an example of how to implement the UserEditComponent. The user will also available available as a signal as we are using declarative binding. As the user id is a signal, we use an effect to load the user data when the id changes.
+
+Example:
 
 ```typescript
 export class UserEditComponent {
-  id = input.required<number>();
+  id = input<number>();
   service = inject(UserService);
-  user = toSignal(this.service.getById(this.id()));
+  user = new User();
+
+  userForm = this.fb.group({
+    id: [this.user().id, Validators.required],
+    userName: [this.user().userName, Validators.required],
+    email: [this.user().email, [Validators.required, Validators.email]],
+    password: [this.user().password, Validators.required],
+    birthDate: [this.user().birthDate]
+  });
+
+  userUpdate = effect(() => {
+    if (this.id()) {
+      this.service.getById(this.id()).subscribe((user) => {
+        this.userForm.patchValue(user);
+      });
+    }
+  });
 }
 ```
 
-- To not create loading indicators, or extended error handling.
+- Do not create loading indicators, or extended error handling.
 
 ### Routing
 
-Implement routes for the container component and the edit component in app.routes.ts. The route for the container should be the same as the model name. The route for the edit component should be the same as the model name with `/edit` suffix and an id parameter. Example: `/user` and `/user/edit/:id`.
+Implement routes for the list component and the edit component in app.routes.ts. The route for the list container should be the same as the model name. The route for the edit component should be the same as the model name with `/edit` suffix and an id parameter. Example: `/user` and `/user/edit/:id`.
+
+Use Component Input Binding in app.routes.ts:
+
+```typescript
+provideRouter(routes, withComponentInputBinding()),
+```
 
 #### Navbar Component
 
-- The navbar component will be implemented using the Angular CLI. The navbar will have links to all the container components. The navbar will be implemented in the app component and will be displayed on all pages and styled using Bootstrap.
+- The navbar component will be implemented using the Angular CLI. The navbar will have links to all the list components. The navbar will be implemented in the app component and will be displayed on all pages and styled using Bootstrap.

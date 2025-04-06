@@ -54,10 +54,6 @@ It includes setting up proper project structures, defining development environme
 
 - Initial prompt to set up both .NET and Angular projects:
 
-  ```prompt
-  Execute the steps mentioned in 'Task: Scaffold Projects' of docs/mona-high-school-fitness-tracker.md. Stop after this section.
-  ```
-
 - Check the outcome of the scaffolding process. Run the `octofit-api`
 
   ```prompt
