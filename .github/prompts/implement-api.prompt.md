@@ -4,16 +4,16 @@
 
 2. Create the .NET backend (src/octofit-api) using .NET 9 and the dotnet cli using: dotnet new webapi -n octofit-api.
 
-3. In Programm.cs add configuration for the SwaggerUI should to be visible at / implemented in the Swashbuckle.AspNetCore package
+3. Start with enforcing namespace conventions.
 
-4. The backend will use Entity Framework Core and SQL Lite for the database. Add the packages `Microsoft.EntityFrameworkCore` and `Microsoft.EntityFrameworkCore.Sqlite`
+4. In Programm.cs add configuration for the SwaggerUI should to be visible at the root url implemented in the Swashbuckle.AspNetCore package
 
 5. Set the project launch settings to use port 5001 for https and 5000 for http.
 
 6. Add a CORS policy to allow all origins and methods.
 
-7. Start with enforcing namespace conventions.
+7. The backend will use Entity Framework Core and SQL Lite for the database. Add the packages `Microsoft.EntityFrameworkCore` and `Microsoft.EntityFrameworkCore.Sqlite`
 
-8. Before starting the implementation, share your plan.
+8. Before starting the implementation, share your plan. Keep the order of the tasks.
 
 9. Do nothing else and stop after this section.
