@@ -133,14 +133,16 @@ Our serialization format is camelCase. Configure it in Program.cs
 
 ### Artifacts Scaffolding
 
-The Api will have two component for each model, each model having its on folder. Example: `src/octofit-ui/src/app/user`.
+For each .net model, create a corresponding Angular client side mode. Example:
 
-There will be a container that will display the data in a table and a edit component. They should be implemented using the Angular CLI
+src/octofit-ui/src/app/user/user.model.ts
 
-ng g c <model>/<model>-container
-ng g c <model>/<model>-edit
+The Api will have two components for each model, each model having its on folder. There will be a base component that will display the data in a table and a edit component. Example:
 
-The component will use a service the service will be implemented using the Angular CLI ng g s <model>/<model> command.
+src/octofit-ui/src/app/user/user.component.ts
+src/octofit-ui/src/app/user/user-edit.component.ts
+
+Each component will use a service that will use the Angular httpClient. Example: src/octofit-ui/src/app/user/user.service.ts
 
 Each service will have the following methods:
 
@@ -150,16 +152,42 @@ Each service will have the following methods:
 - `update` - Update an existing record
 - `delete` - Delete a record by id
 
-Implement routes for the container component and the edit component in app.routes.ts. The route for the container should be the same as the model name. The route for the edit component should be the same as the model name with `/edit` suffix and an id parameter. Example: `/user` and `/user/edit/:id`.
-
-#### Navbar Component
-
-- The navbar component will be implemented using the Angular CLI. The navbar will have links to all the container components. The navbar will be implemented in the app component and will be displayed on all pages and styled using Bootstrap.
-
-#### Container Component
+#### Base Component
 
 - The container component will display the data in a simple bootstrap striped table.
 
 - The data from the service will be converted to a Signal using the toSignal function from the `@angular/core/rxjs-interop` package. The table displays the properties of the model and will have a button to edit the record. The button will navigate to the edit component using the routerLink directive.
 
-- Do not implement the edit component yet.
+#### Edit Component
+
+- The edit component will display a form with the properties of the model. The form will be implemented using the Reactive Forms module. The form will have a submit button that will call the create or update method of the service depending on the mode (create or edit). The form will be validated using Angular's built-in validators.
+
+- To get the value of the form use Component Input Binding:
+
+- Configure it in app.config.ts:
+
+```typescript
+provideRouter(
+   appRoutes,
+   withComponentInputBinding(),
+),
+```
+
+- Use it in the edit component:
+
+```typescript
+export class UserEditComponent {
+  id = input.required<number>();
+  service = inject(UserService);
+  user = toSignal(this.service.getById(this.id()));
+
+}
+```
+
+### Routing
+
+Implement routes for the container component and the edit component in app.routes.ts. The route for the container should be the same as the model name. The route for the edit component should be the same as the model name with `/edit` suffix and an id parameter. Example: `/user` and `/user/edit/:id`.
+
+#### Navbar Component
+
+- The navbar component will be implemented using the Angular CLI. The navbar will have links to all the container components. The navbar will be implemented in the app component and will be displayed on all pages and styled using Bootstrap.
