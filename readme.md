@@ -27,7 +27,7 @@ The [OctoFit Tracker](/docs/octofit_story.md) is a comprehensive solution for ma
 
 [GitHub Certifications](https://resources.github.com/learn/certifications/)
 
-[A more dynamic, less planned version of the repo](https://github.com/alexander-kastil/github-copilot-skills-fest-dynamic)
+[A more dynamic, less pre-planned version of the repo with prompts - v1 draft](https://github.com/alexander-kastil/github-copilot-skills-fest-dynamic)
 
 ## Contributing
 
