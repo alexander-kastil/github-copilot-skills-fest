@@ -11,7 +11,7 @@ This repository a guide to Vibe Coding using GitHub Copilot for a fitness tracki
 
 ## Project Overview
 
-The Fitness App is a comprehensive solution for managing students and their exercise routines. It consists of a .NET 9 Web API backend and an Angular 19 frontend, providing a seamless experience for users.
+The [OctoFit Tracker](/docs/octofit_story.md) is a comprehensive solution for managing students and their exercise routines. It consists of a .NET 9 Web API backend and an Angular 19 frontend, providing a seamless experience for users. Technical details can be found in the [technical documentation](docs/mona-high-school-fitness-tracker.md).
 
 ### Project Purpose and Objectives@
 
