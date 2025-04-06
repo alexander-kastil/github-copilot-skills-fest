@@ -133,7 +133,7 @@ Our serialization format is camelCase. Configure it in Program.cs
 
 ### Artifacts Scaffolding
 
-For each .net model, create a corresponding Angular client side mode. Example:
+For each .net model, create a corresponding Angular client side mode. Initialize each property. Example:
 
 src/octofit-ui/src/app/user/user.model.ts
 
