@@ -6,4 +6,4 @@
 4. Scaffold the model components and services according to the requirements. Move to the correct directories and the scaffold one artifact after another.
 5. Implement routing and navigation.
 6. Implement the components and use services according to the requirements.
-7. Before starting the implementation, share your plan.
+7. Before starting the implementation, share your plan and keep the order.
