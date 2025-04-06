@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  standalone: true,
+  imports: [RouterOutlet, RouterLink],
+  template: `
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+      <div class="container">
+        <a class="navbar-brand" routerLink="/">OctoFit</a>
+        <div class="navbar-nav">
+          <a class="nav-link" routerLink="/workout" routerLinkActive="active"
+            >Workouts</a
+          >
+        </div>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  `,
 })
-export class AppComponent {
-  title = 'octofit-ui';
-}
+export class AppComponent {}
