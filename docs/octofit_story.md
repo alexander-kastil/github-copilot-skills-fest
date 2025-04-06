@@ -100,27 +100,31 @@ These are the current models supported for GitHub Copilot Chat.
 
 We'll be using a modern web application stack:
 
-- **Frontend**: React.js
-- **Backend**: Python with Django REST Framework
-- **Database**: MongoDB
+- **Frontend**: Angular 19.2 with Bootstrap
+- **Backend**: .NET 9 WebApi with Entity Framework
+- **Database**: SQLite
 - **Development Environment**: GitHub Codespaces
 
 ### Workshop Structure
 
 1. **Introduction**
+
    - Overview of OctoFit Tracker app concept
    - GitHub Copilot Chat models
 
 2. **Setup of Prerequisites**
+
    - Setting up GitHub Codespaces
    - Ensure GitHub Copilot and Copilot Chat extensions are up to date
 
 3. **Rapid Prototyping with GitHub Copilot agent mode**
+
    - Creating project structure
    - Generating boilerplate code
    - Implementing basic models, serializers, urls, and views
 
 4. **Building Core Features**
+
    - Activity logging API
    - Team management
    - Leader board functionality
@@ -129,5 +133,5 @@ We'll be using a modern web application stack:
    - Setting up React components
    - Implementing responsive UI
    - Connecting to backend APIs
-   - Python Django business logic
-   - MongoDB data layer
+   - .NET business logic
+   - SQLite data layer

@@ -1,65 +1,31 @@
 # Build applications with GitHub Copilot agent mode
 
-This repository a guide to Vibe Coding using GitHub Copilot for a fitness application. It contains a [prompt list](prompts/readme.md) to fulfill the [goals](goal/readme.md) of the [Microsoft Skills Fest](https://aiskillsfest.event.microsoft.com/)
+This repository a guide to Vibe Coding using GitHub Copilot for a fitness tracking application. It contains a [prompt list](docs/readme.md) to fulfill the [goals](/docs/octofit_story.md) of the [Microsoft Skills Fest](https://aiskillsfest.event.microsoft.com/)
 
-- [ ] **Task 1**: [Project Setup including a devcontainer.json](prompts/readme.md#task-1-project-setup)
-- [ ] **Task 2**: [Implement the Web Api using Vibe Coding](prompts/readme.md#task-2-configure-the-web-api)
-- [ ] **Task 3**: [Implement the Angular App using Vibe Coding](prompts/readme.md#task-3-configure-the-angular-app)
-- [ ] **Task 4**: [Add project documentation using a reusable prompt](prompts/readme.md#task-4-add-project-documentation-using-a-reusable-prompt)
-- [ ] **Task 5**: [Implement & Integrate a Playwright MCP (Model Context Protocol) Service](prompts/readme.md#task-5-implement--integrate-a-playwright-mcp-model-context-protocol-service)
-- [ ] **Task 6**: [Implement tests using Vibe Coding](prompts/readme.md#task-6-implement-tests-using-vibe-coding)
-- [ ] **Task 7**: [Implement Bicep in infra folder using Vibe Coding](prompts/readme.md#task-7-implement-bicep-in-infra-folder-using-vibe-coding)
-- [ ] **Task 8**: [Add a CI/CD pipeline using Azure DevOps](prompts/readme.md#task-8-add-a-cicd-pipeline-using-azure-devops)
-
-> Note: Task 6-8 are not included in this repository and are not part of this session. They are [GitHub Issues](https://github.com/alexander-kastil/copilot-skills-fest/issues) waiting to be addressed.
+- **Task 1**: Work with GitHub
+- **Task 2**: Setup Coding Instructions & Tooling
+- **Task 3**: Scaffold project structure
+- **Task 4**: Implement the .NET Web API
+- **Task 5**: Implement the Angular Frontend
+- **Task 6**: Add project documentation using a reusable prompt
 
 ## Project Overview
 
 The Fitness App is a comprehensive solution for managing students and their exercise routines. It consists of a .NET 9 Web API backend and an Angular 19 frontend, providing a seamless experience for users.
 
-![app](/prompts/images/app.jpg)
-
-### Project Purpose and Objectives
+### Project Purpose and Objectives@
 
 - Simplify the management of student data and exercise tracking.
 - Provide a responsive and user-friendly interface.
 - Ensure scalability and maintainability with modern technologies.
 
-### High-Level Architecture Diagram
+## Resources
 
-```
-[Browser] <--> [Fitness UI (Angular)] <--> [Fitness API (.NET)] <--> [SQLite Database]
-```
+[Visual Studio Code Updates](https://code.visualstudio.com/updates/)
 
-### Key Technologies and Frameworks
+[Microsoft Learn - Building applications with GitHub Copilot agent mode](https://learn.microsoft.com/en-us/training/modules/github-copilot-agent-mode/)
 
-- Angular 19
-- .NET 9
-
-### Project Structure
-
-```
-.
-├── .ado/          # Azure DevOps pipeline configurations
-├── infra/         # Infrastructure as Code and deployment scripts
-└── src/           # Source code and services
-    ├── fitness-api/  # Backend API
-    └── fitenss-ui/   # Frontend application
-```
-
-## Quick Start Guide
-
-### Prerequisites
-
-- Node.js 20.12.2 or higher
-- Angular CLI 19
-- .NET 9 SDK
-
-### Development Setup Instructions
-
-1. Clone the repository.
-2. Navigate to the `src/fitness-api` directory and run `dotnet run` to start the backend.
-3. Navigate to the `src/fitenss-ui` directory and run `ng serve -o` to start the frontend.
+[GitHub Certifications](https://resources.github.com/learn/certifications/)
 
 ## Contributing
 
