@@ -158,31 +158,25 @@ Each service will have the following methods:
 
 - The data from the service will be converted to a Signal using the toSignal function from the `@angular/core/rxjs-interop` package. The table displays the properties of the model and will have a button to edit the record. The button will navigate to the edit component using the routerLink directive.
 
+- When creating a new record, pass a 0 id to the edit component. The edit component will create a new record and navigate back to the container component.
+
+- To not create loading indicators, or extended error handling.
+
 #### Edit Component
 
 - The edit component will display a form with the properties of the model. The form will be implemented using the Reactive Forms module. The form will have a submit button that will call the create or update method of the service depending on the mode (create or edit). The form will be validated using Angular's built-in validators.
 
-- To get the value of the form use Component Input Binding:
-
-- Configure it in app.config.ts:
-
-```typescript
-provideRouter(
-   appRoutes,
-   withComponentInputBinding(),
-),
-```
-
-- Use it in the edit component:
+- To get the value of the form use Component Input Binding: Here is an example of how to implement the UserEditComponent. The user will also available available as a signal as we are using declarative binding.
 
 ```typescript
 export class UserEditComponent {
   id = input.required<number>();
   service = inject(UserService);
   user = toSignal(this.service.getById(this.id()));
-
 }
 ```
+
+- To not create loading indicators, or extended error handling.
 
 ### Routing
 
