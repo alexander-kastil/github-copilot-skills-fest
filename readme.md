@@ -1,6 +1,6 @@
 # Build applications with GitHub Copilot agent mode
 
-This repository a guide to Vibe Coding using GitHub Copilot for a fitness tracking application. It contains a [prompt list](docs/readme.md) to fulfill the [goals](/docs/octofit_story.md) of the [Microsoft Skills Fest](https://aiskillsfest.event.microsoft.com/)
+This repository a guide to Vibe Coding using GitHub Copilot for a fitness tracking application. It contains a [prompt list](docs/readme.md) to fulfill the goals of the [Microsoft Skills Fest](https://aiskillsfest.event.microsoft.com/)
 
 - **Task 1**: Work with GitHub
 - **Task 2**: Setup Coding Instructions & Tooling
@@ -13,7 +13,7 @@ This repository a guide to Vibe Coding using GitHub Copilot for a fitness tracki
 
 The [OctoFit Tracker](/docs/octofit_story.md) is a comprehensive solution for managing students and their exercise routines. It consists of a .NET 9 Web API backend and an Angular 19 frontend, providing a seamless experience for users. Technical details can be found in the [technical documentation](docs/mona-high-school-fitness-tracker.md).
 
-### Project Purpose and Objectives@
+### Project Purpose and Objectives
 
 - Simplify the management of student data and exercise tracking.
 - Provide a responsive and user-friendly interface.
