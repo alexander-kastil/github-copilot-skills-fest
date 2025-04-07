@@ -19,6 +19,8 @@ The [OctoFit Tracker](/docs/octofit_story.md) is a comprehensive solution for ma
 - Provide a responsive and user-friendly interface.
 - Ensure scalability and maintainability with modern technologies.
 
+> Note: A solution is provided in the [docs](/docs/solution/) folder.
+
 ## Resources
 
 [Visual Studio Code Updates](https://code.visualstudio.com/updates/)
