@@ -8,14 +8,12 @@
 
    ```models
    **User Model**
-
    - Unique identifier (GUID)
    - Username (required, max 100 characters)
    - Email address (required, valid email format)
    - Password (required, max 100 characters)
 
    **Activity Model**
-
    - Unique identifier (GUID)
    - User Name (required)
    - Email address (required, valid email format)
@@ -23,7 +21,6 @@
    - Duration (required, TimeSpan)
 
    **Leaderboard Model**
-
    - Unique identifier (GUID)
    - User Name (required)
    - Email address (required, valid email format)
@@ -46,4 +43,4 @@
 
 6. Implement the controllers for each model according to the requirements in the Controllers folder and in the OctoFitApi namespace.
 
-7. .Before starting the implementation, share your plan. Keep the order of the tasks. Don't proceed with the next activity until all of these steps are completed.
+7. Before starting the implementation, share your plan. Keep the order of the tasks. Don't proceed with the next activity until all of these steps are completed.

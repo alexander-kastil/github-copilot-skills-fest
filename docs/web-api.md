@@ -33,7 +33,6 @@ The data models for the OctoFit Tracker consist of the following entities. The a
    - Unique identifier (GUID)
    - Workout name (required, max 100 characters)
    - Workout description (optional)
-
 ```
 
 Our serialization format is camelCase. Configure it in Program.cs
