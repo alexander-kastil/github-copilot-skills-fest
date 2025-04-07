@@ -4,6 +4,8 @@
 
 This template provides a structured approach for generating comprehensive documentation across different levels of the project. The documentation should be created in a bottom-up approach, starting with detailed service-level documentation and building up to the project overview.
 
+Skip the folders that are not present in this project. Add top level folders in the same pattern.
+
 ## Documentation Structure
 
 ### 1. Top Level Documentation (root readme.md)
@@ -19,8 +21,8 @@ Create a concise project overview including:
   ├── .ado/          # Azure DevOps pipeline configurations
   ├── infra/         # Infrastructure as Code and deployment scripts
   └── src/           # Source code and services
-      ├── api/
-      └── ui/
+      ├── octofit-api/
+      └── octofit-ui/
   ```
 - Quick start guide
 - Prerequisites
