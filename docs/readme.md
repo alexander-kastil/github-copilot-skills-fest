@@ -1,4 +1,4 @@
-# Prompt list
+# Prompt Guide
 
 - **Task 1**: Work with GitHub
 - **Task 2**: Setup Coding Instructions & Tooling
