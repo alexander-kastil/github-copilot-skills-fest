@@ -1,7 +1,41 @@
-6. Create a batch operation to scaffold the models, components and services using one terminal instance
+# Implement the Users List and Edit Component
 
-7. Implement the list components for each model. The list components will be used to display the data in a table format. We will only implement the User and the Activity entities.
+1. In the octofit-ui/src/app/user folder, create a UsersComponent. This component will be used to display the user data in a striped table format. It should have the columns: UserName, Email, BirthDate.
 
-8. Implement routing and navigation.
+2. The table should have a button to edit the user which will navigate to the edit component by passing the id of the user as a parameter. When creating a new user, pass a id "0" to the edit component. The table should also have a delete button that uses the id of the row to delete the user using the service.
 
-9. Implement the edit component for the User.
+3. Configure component input binding app.config.ts but leave the rest of app.config.ts as it is. Example:
+
+```typescript
+provideRouter(routes, withComponentInputBinding()),
+```
+
+4. In the UserEditComponent the id signal will be used to get the user data from the service. The id will be passed as a parameter to the edit component using an :id parameter. Angular 19+ will handle this change in the userUpdate effect which is a modern replacement for ngOnChanges. The effect get the user data from the service and patch the form with the data. Stick to this pattern.
+
+```typescript
+export class UserEditComponent {
+  id = input<number>();
+  service = inject(UserService);
+  user = new User();
+
+  userForm = this.fb.group({
+    id: [this.user().id, Validators.required],
+    userName: [this.user().userName, Validators.required],
+    email: [this.user().email, [Validators.required, Validators.email]],
+    password: [this.user().password, Validators.required],
+    birthDate: [this.user().birthDate]
+  });
+
+  userUpdate = effect(() => {
+    if (this.id()) {
+      this.service.getById(this.id()).subscribe((user) => {
+        this.userForm.patchValue(user);
+      });
+    }
+  });
+}
+```
+
+5. Implement routing and navigation. Example: `/user` and `/user/edit/:id`.
+
+6. Before starting the implementation, share your plan. Keep the order of the tasks. Do not implement anything that you are not asked for. Don't proceed with the next activity until all of these steps are completed.
