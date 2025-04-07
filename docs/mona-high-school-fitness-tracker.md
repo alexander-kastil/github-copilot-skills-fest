@@ -112,8 +112,6 @@ The data models for the OctoFit Tracker consist of the following entities. The a
    - Workout name (required, max 100 characters)
    - Workout description (optional)
 
-Copy seeding data provided in `docs/assets/seeding_data.json` to the root of the project. Do not change any content of the file. Modify the \*.csproj file to include the seeding data in the project in an ItemGroup. For simplicity use the existing model classes to deserialize the JSON data and do not handle relationships in Entity Framework.
-
 Our serialization format is camelCase. Configure it in Program.cs
 
 - When creating the `OctoFitDbContext`, use `OnModelCreating` to configure the models and seed the database with the data from `seeding_data.json`.
