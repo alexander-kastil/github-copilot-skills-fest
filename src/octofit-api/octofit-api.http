@@ -1,0 +1,6 @@
+@octofit_api_HostAddress = http://localhost:5039
+
+GET {{octofit_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

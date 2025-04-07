@@ -2,7 +2,7 @@
 
 ## SQLite Database, Entity Framework Core and Database Context
 
-The webapi will created in the `octofit-api` folder.
+The webapi will created in the `octofit-api` folder. All objects will reside in the OctoFitApi namespace.
 
 The data models for the OctoFit Tracker consist of the following entities. The app does not use DTO's and the models are used directly in the API. The models are defined in the `Models` folder of the API project. The models are:
 
