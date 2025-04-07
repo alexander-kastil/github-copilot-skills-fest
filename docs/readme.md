@@ -73,10 +73,10 @@ This task focuses on setting up the back-end API functionality including data mo
 
 - Use `implement-api.prompt.md` to implement the Web API
 
-> Note: You can smoke test the result by executing the following command in the terminal and call a method using the swagger UI:
+> Note: You can smoke test the WebApi by creating a REST Client file:
 
 ```bash
-dotnet run
+In src/octofit-api create a REST client test-user-controller.http in wich you test all methods of the UserController
 ```
 
 ## Task 5: Implement the Angular Frontend

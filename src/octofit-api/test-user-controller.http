@@ -1,0 +1,36 @@
+@baseUrl = http://localhost:5000
+
+### Get all users
+GET {{baseUrl}}/api/users
+Accept: application/json
+
+### Get user by ID
+# Replace the ID with an actual user ID from your database
+GET {{baseUrl}}/api/users/1f0e5570-8a4b-4a11-b917-f16014182c79
+Accept: application/json
+
+### Create a new user
+POST {{baseUrl}}/api/users
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "email": "test@example.com",
+    "password": "password123"
+}
+
+### Update an existing user
+# Replace the ID with an actual user ID from your database
+PUT {{baseUrl}}/api/users/1f0e5570-8a4b-4a11-b917-f16014182c79
+Content-Type: application/json
+
+{
+    "id": "1f0e5570-8a4b-4a11-b917-f16014182c79",
+    "username": "updateduser",
+    "email": "updated@example.com",
+    "password": "newpassword123"
+}
+
+### Delete a user
+# Replace the ID with an actual user ID from your database
+DELETE {{baseUrl}}/api/users/1f0e5570-8a4b-4a11-b917-f16014182c79
