@@ -6,36 +6,35 @@ The webapi will created in the `octofit-api` folder. All objects will reside in 
 
 The data models for the OctoFit Tracker consist of the following entities. The app does not use DTO's and the models are used directly in the API. The models are defined in the `Models` folder of the API project. The models are:
 
-1. **User Model**
+```
+   **User Model**
 
    - Unique identifier (GUID)
    - Username (required, max 100 characters)
    - Email address (required, valid email format)
    - Password (required, max 100 characters)
 
-2. **Team Model**
+   **Activity Model**
 
    - Unique identifier (GUID)
-   - Team name (required, max 100 characters)
-   - Collection of team members (Users)
-
-3. **Activity Model**
-
-   - Unique identifier (GUID)
-   - User reference (required, foreign key)
+   - User Name (required)
+   - Email address (required, valid email format)
    - Activity type (required, max 100 characters)
    - Duration (required, TimeSpan)
 
-4. **Leaderboard Model**
+   **Leaderboard Model**
 
    - Unique identifier (GUID)
-   - User reference (required, foreign key)
+   - User Name (required)
+   - Email address (required, valid email format)
    - Score (required, integer)
 
-5. **Workout Model**
+   **Workout Model**
    - Unique identifier (GUID)
    - Workout name (required, max 100 characters)
    - Workout description (optional)
+
+```
 
 Our serialization format is camelCase. Configure it in Program.cs
 

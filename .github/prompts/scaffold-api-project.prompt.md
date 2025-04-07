@@ -20,6 +20,4 @@ Make sure to add the using directives for the packages in the `Program.cs` file.
 
 7.Remove app.UseHttpsRedirection();
 
-8.Copy docs/assets/octofit.db to the root of the project.
-
-9 .Before starting the implementation, share your plan. Keep the order of the tasks. Don't proceed with the next activity until all of these steps are completed.
+8.Before starting the implementation, share your plan. Keep the order of the tasks. Don't proceed with the next activity until all of these steps are completed.
