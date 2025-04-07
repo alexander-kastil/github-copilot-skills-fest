@@ -82,92 +82,14 @@ dotnet run
 
 This task implements the front-end user interface by creating Angular components, services, and routing configurations. It establishes the connection between the Angular app and the .NET API, ensuring proper data display and user interaction.
 
-- Creating the component structure and navigation for the Angular app:
+- Creating the HomeComponent, NavbarComponent, basic routing and the client side models and services by executing the `implement-ui-models.prompt.md` prompt.
 
-  ```prompt
-  Add the following components to the Angular app:
+- Create the LeaderboardComponent and implement the leaderboard list using the `implement-ui-leaderboard.prompt.md` prompt.
 
-  - Home
-  - Students
-  - Exercises
-  - Shared/Navbar
-
-  Add the links to the Navbar and the routing to the app.routing.ts.
-  Add a router-outlet to the app.component.html. The Navbar should have 100px. The container for the router-outlet should fit the rest of the screen
-  ```
-
-- Add a service to the Angular app that uses the HttpClient to call the API.
-
-- Implementing API communication services in Angular:
-
-  ```prompt
-  Add a students service to the Angular app that uses the HttpClient to call the API. Register the HttpClient in app.config.ts using the provide function. Implement the methods getStudent and getStudents. Create client side model classes that match the API models. Update the hadrdcoded implementation of the Students component to use the service. Fix the template and use Control Flow syntax
-  ```
-
-- Adding CORS configuration to the API:
-
-  ```prompt
-  In the api Program.cs add a CORS rule to allow all request form all domains on all methods
-  ```
-
-- Troubleshooting data display issues:
-
-  ```prompt
-  there are no students displayed on the page. data is returned. Angular Dev Tools show the following state as in the screenshot
-  ```
-
-- Adding diagnostic logging to fix data display issues:
-
-  ```prompt
-  still no output so please add terminal logging to the students component so you can examine it and fix the error
-  ```
+- Create the UsersComponent and the UsersEditComponent using the `implement-ui-users.prompt.md` prompt.
 
 ## Task 6: Add project documentation using a reusable prompt
 
 This task improves the project's documentation by leveraging reusable GitHub Copilot prompts. It demonstrates how to create, attach, and utilize custom prompts to generate comprehensive documentation for the application.
 
-- Create docs using a saved prompt in `.github/prompts/*.prompt.md`
-
-  ![prompt](./images/docs.jpg)
-
-- Attach the prompt
-
-  ![attach](./images/attach.jpg)
-
-- Use the attached prompt to create the documentation
-
-  ![prompt](./images/use-prompt.jpg)
-
-## Task 6: Implement & Integrate a Playwright MCP (Model Context Protocol) Service
-
-This task enhances the development workflow by adding Playwright MCP capabilities that allow GitHub Copilot to interact with the application through a browser. It demonstrates the power of AI-assisted development with visual context awareness for more sophisticated application testing and development.
-
-- Add Playwright to `.vscode/mcp.json` in the fitness-ui project. This will allow the agent to interact with the application using the browser. We could also install Playwright in the root project.
-
-  ```json
-  {
-      "servers": {
-          "playwright": {
-              "command": "npx",
-              "args": [
-                  "@playwright/mcp@latest",
-                  "--vision"
-              ]
-          }
-      }
-  }
-  ```
-
-- Restart the tools using the command palette. This will install Playwright and start the MCP server.
-
-  ![restart-tools](./images/restart-tools.jpg)
-
-- Check if the tools are available by clicking on `Select tools` in your agents control center
-
-  ![check-tools](./images/check-tools.jpg)
-
-- Check if the tools are working correctly:
-
-  ```prompt
-  Navigate to http://localhost:4200/ and describe the result. Do nothing else.
-  ```
+- Create docs using `create-docs.prompt.md`
