@@ -65,12 +65,12 @@ For each script:
 - Required parameters
 - Usage examples
 
-### 4. Service / Component Documentation (src/readme.md)
+### 4. Service / UI Component Oberview (src/readme.md)
 
 - Overall description of the application.
 - Purpose of each service and a very high-level description of its stack. Keep together for each service and component
 
-### 5. Detailed Service / Component / Plugin Documentation (src/{service}/readme.md)
+### 5. Detailed Service / UI Component / Plugin Documentation (src/{service}/readme.md)
 
 Each service documentation should include:
 
