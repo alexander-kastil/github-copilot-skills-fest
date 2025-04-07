@@ -91,14 +91,16 @@ The data models for the OctoFit Tracker consist of the following entities. The a
 2. **Activity Model**
 
    - Unique identifier (GUID)
-   - User reference (required, foreign key)
+   - User Name (required)
+   - Email address (required, valid email format)
    - Activity type (required, max 100 characters)
    - Duration (required, TimeSpan)
 
 3. **Leaderboard Model**
 
    - Unique identifier (GUID)
-   - User reference (required, foreign key)
+   - User Name (required)
+   - Email address (required, valid email format)
    - Score (required, integer)
 
 4. **Workout Model**
