@@ -1,19 +1,31 @@
 # Implement the WebApi
 
-1. Implement the requirements mentioned in '## Task 2: Implement the Web Api' of docs/mona-high-school-fitness-tracker.md.
+1. Read the requirements mentioned in '# Implement the Web Api' of docs/web-api.md.
 
-2. Create the .NET backend (src/octofit-api) using .NET 9 and the dotnet cli using: dotnet new webapi -n octofit-api.
+2. Remove the WeatherForecastController and WeatherForecast.cs files from the project.
 
-3. Start with enforcing namespace conventions.
+3. Create all models in the Models folder. Keep the namespace OctoFitApi.
 
-4. In Programm.cs add configuration for the SwaggerUI should to be visible at the root url implemented in the Swashbuckle.AspNetCore package
+4. Copy the seeding data provided in `docs/assets/seeding_data.json` to the root of the project. Do not change any content of the file. Modify the \*.csproj file to include the seeding data in the project in an ItemGroup.
 
-5. Set the project launch settings to use port 5001 for https and 5000 for http.
+5. The backend will use Entity Framework Core and SQL Lite for the database:
 
-6. Add a CORS policy to allow all origins and methods.
+- Use the existing model classes to deserialize the JSON data and do not handle relationships in Entity Framework.
+- Add the Database Connection String in the appsettings.json and appsettings.Development.json files.
+- The DatabaseContext class should be created in the Data folder and in namespace OctoFitApi.
+- Implement the seeding of data in the DatabaseContext class.
+- The seeding should be done in the constructor of the DatabaseContext class.
+- The database should be created automatically when the application starts the project root `octofit.db`
+  ```
+  public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
+  {
+      Database.EnsureCreated();
+      SeedData();
+  }
+  ```
 
-7. The backend will use Entity Framework Core and SQL Lite for the database. Add the packages `Microsoft.EntityFrameworkCore` and `Microsoft.EntityFrameworkCore.Sqlite`
+6. Implement the controllers for each model according to the requirements in the Controllers folder and in the OctoFitApi namespace.
 
-8. Before starting the implementation, share your plan. Keep the order of the tasks.
+7. Before starting the implementation, share your plan. Keep the order of the tasks.
 
-9. Do nothing else and stop after this section.
+8. Do nothing else and stop after this section.

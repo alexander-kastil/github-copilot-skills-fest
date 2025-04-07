@@ -57,7 +57,7 @@ It includes setting up proper project structures, defining development environme
 - Check the outcome of the scaffolding process. Run the `octofit-api`
 
   ```prompt
-  The octofit-api is already running. Navigate to `http://localhost:5000/` using the browser and describe the result. Check if the default WeatherForecast method is present. Navigate to http://localhost:5000/weatherforecast and describe the json.
+  The octofit-api is already running. Navigate to `http://localhost:5000/` using the browser and describe the result.
   ```
 
 ## Task 4: Implement the .NET Web API
