@@ -5,6 +5,7 @@
 - **Task 3**: Scaffold project structure
 - **Task 4**: Implement the .NET Web API
 - **Task 5**: Implement the Angular Frontend
+- **Task 6**: Add project documentation using a reusable prompt
 
 The Tasks were executed by the GutHub Copilot Agent mostly using Claude Sonnet 3.5 with these [Visual Studio Code Settings](/prompts/assets/general/settings.json)
 
@@ -83,6 +84,12 @@ dotnet run
 This task implements the front-end user interface by creating Angular components, services, and routing configurations. It establishes the connection between the Angular app and the .NET API, ensuring proper data display and user interaction.
 
 - Creating the HomeComponent, NavbarComponent, basic routing and the client side models and services by executing the `implement-ui-models.prompt.md` prompt.
+
+> Note: If you want you can test the application after implementing the components using the Playwright MCP Tools that we registered:
+
+```prompt
+The octofit-api and octofit-ui are already running. Navigate to `http://localhost:4200/` using the browser and describe the result.
+```
 
 - Create the LeaderboardComponent and implement the leaderboard list using the `implement-ui-leaderboard.prompt.md` prompt.
 
