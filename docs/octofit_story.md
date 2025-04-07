@@ -72,66 +72,35 @@ In this workshop, you'll:
 - A competitive leaderboard
 - Personalized workout suggestions
 
-### GitHub Copilot Chat
+## Technical Stack
 
-These are the current models supported for GitHub Copilot Chat.
+Generate instructions in this order
 
-- Claude Sonnet 3.5 (Preview)
-- Claude Sonnet 3.7 (Preview)
-- Claude Sonnet 3.7 Thinking (Preview)
-- Gemini 2.0 Flash (Preview)
-- GPT-4o
-- o1 (Preview)
-- o3-mini (Preview)
+1. Frontend and Backend Setup
 
-#### [LLM models explained](https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat#ai-models-for-copilot-chat-1)
+   - Create a `src` directory for both projects
+   - Create `src/octofit-api` for the .NET backend
+   - Create `src/octofit-ui` for the Angular frontend
 
-![Github Copilot Chat models](https://github.com/user-attachments/assets/f2f8d0bd-366b-4ecf-b88d-d092ae7b8b10)
+2. Backend Setup (.NET)
 
-#### Prompt engineering
+   - Use .NET 9 WebAPI template
+   - Configure UseSwaggerUI to use an empty string route prefix in the Development environment
+   - Add Entity Framework Core with SQLite
+   - Configure ports: HTTPS (5001), HTTP (5000)
+   - Enable CORS for all origins
+   - Do not use app.UseHttpsRedirection();
+   - Implement a .NET specific .gitignore file in the root of the project
+   - Root namespace should be `OctoFitApi`
 
-- [GitHub documentation prompt engineering](https://docs.github.com/en/copilot/using-github-copilot/prompt-engineering-for-github-copilot)
-- [How to use GitHub Copilot: Prompts, tips, and use cases](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
-- [Using GitHub Copilot in your IDE: Tips, tricks, and best practices](https://github.blog/2024-03-25-how-to-use-github-copilot-in-your-ide-tips-tricks-and-best-practices/)
-- [A developer’s guide to prompt engineering and LLMs](https://docs.github.com/en/copilot/using-github-copilot/prompt-engineering-for-github-copilot#:~:text=A%20developer%E2%80%99s%20guide%20to%20prompt%20engineering%20and%20LLMs)
-- [GitHub Copilot: The Agent Awakens](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/#agent-mode-available-in-preview-%f0%9f%a4%96)
+3. Frontend Setup (Angular)
+   - Use Angular CLI 19.2 with Node 20.12.2
+   - Include routing
+   - Disable SSR
+   - Use SCSS styling
+   - Add environment configuration with API URL
+   - Install and configure Bootstrap
+   - Clean up default app component
+   - Implement an Angular specific .gitignore file in the root of the project
 
-### OctoFit tracker fitness application technology stack
-
-We'll be using a modern web application stack:
-
-- **Frontend**: Angular 19.2 with Bootstrap
-- **Backend**: .NET 9 WebApi with Entity Framework
-- **Database**: SQLite
-- **Development Environment**: GitHub Codespaces
-
-### Workshop Structure
-
-1. **Introduction**
-
-   - Overview of OctoFit Tracker app concept
-   - GitHub Copilot Chat models
-
-2. **Setup of Prerequisites**
-
-   - Setting up GitHub Codespaces
-   - Ensure GitHub Copilot and Copilot Chat extensions are up to date
-
-3. **Rapid Prototyping with GitHub Copilot agent mode**
-
-   - Creating project structure
-   - Generating boilerplate code
-   - Implementing basic models, serializers, urls, and views
-
-4. **Building Core Features**
-
-   - Activity logging API
-   - Team management
-   - Leader board functionality
-
-5. **Frontend and Backend Development**
-   - Setting up React components
-   - Implementing responsive UI
-   - Connecting to backend APIs
-   - .NET business logic
-   - SQLite data layer
+Let's think about this step by step and generate the code in small steps.
