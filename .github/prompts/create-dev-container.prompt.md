@@ -10,3 +10,5 @@ To finalize the initial setup create a devcontainer.json that is capable of runn
 3. Add the GitHub CLI
 
 4. Make sure the post-create script to ensure appropriate permissions are set during container startup
+
+5. Before starting the implementation, share your plan. Keep the order of the tasks. Don't proceed with the next activity until all of these steps are completed.

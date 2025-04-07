@@ -25,7 +25,11 @@ Create a new branch 'initial-setup' and switch to it
 This task install some Copilot Settings and Tools and establishes the foundation for our fitness tracking application according to `docs/octofit_story.md`
 
 ```prompt
-Setup the coding instructions and tooling for the project mentioned in docs/mona-high-school-fitness-tracker.md. Do not change any content of the files you copy. Stop after scaffolding the projects.
+1. Setup the coding instructions and tooling for the project mentioned in docs/mona-high-school-fitness-tracker.md.
+
+2. Do not change any content of the files you copy.
+
+3. Before starting the implementation, share your plan. Keep the order of the tasks. Don't proceed with the next activity until all of these steps are completed.
 ```
 
 - Create a development container configuration for consistent environments and easy onboarding of new team members by attaching the re-usable prompt `create-dev-container.prompt.md` with the paperclip icon in the GitHub Copilot chat:
@@ -40,7 +44,7 @@ Create the devcontainer for the project.
 
 - Run the `devcontainer` in `GitHub CodeSpaces`: Codespaces: Connect to Codespace. This will create a new Codespace and open the project in the container.
 
-## Task 3: Scaffold project structure
+## Task 3: Scaffold the projects
 
 Create both the .NET API and Angular frontend projects according to the guides in `docs/mona-high-school-fitness-tracker.md`.
 
@@ -52,23 +56,27 @@ It includes setting up proper project structures, defining development environme
   Read the files docs/octofit_story.md and docs/mona-high-school-fitness-tracker.md and summarize the requirements of the project. Do not implement anything yet. Just get an overview of the requirements. Draw a directory tree of the project.
   ```
 
-- Initial prompt to set up both .NET and Angular projects:
+- Use `scaffold-api-project.prompt.md` to scaffold the webapi
 
-- Check the outcome of the scaffolding process. Run the `octofit-api`
+- Use `sccaffold-ui-project.prompt.md` to scaffold the Angular frontend
+
+- Check the outcome of the scaffolding process using the Playwright MCP Tools that we registered:
 
   ```prompt
-  The octofit-api is already running. Navigate to `http://localhost:5000/` using the browser and describe the result.
+  The octofit-api and octofit-ui are already running. Navigate to `http://localhost:4200/` using the browser and describe the result.
   ```
 
 ## Task 4: Implement the .NET Web API
 
 This task focuses on setting up the back-end API functionality including data models, controllers, and database integration. It establishes the core business logic and data access layer that will serve student and exercise data to the Angular frontend. Details are defined in `docs/mona-high-school-fitness-tracker.md`
 
-```prompt
-Implement the requirements mentioned in '## Task: Implement the Web Api' of docs/mona-high-school-fitness-tracker.md. Do nothing else and stop after this section. Before starting the implementation, share your plan. Complete you work by running 'dotnet build' and fix all errors.
-```
+- Use `implement-api.prompt.md` to implement the Web API
 
-> Note: This prompt is also available in `.github/prompts/implement-api.prompt.md`.
+> Note: You can check the result by executing the following command in the terminal and call a method using the swagger UI:
+
+```bash
+dotnet run
+```
 
 ## Task 5: Implement the Angular Frontend
 
