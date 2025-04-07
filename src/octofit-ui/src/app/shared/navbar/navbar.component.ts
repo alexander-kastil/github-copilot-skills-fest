@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   template: `
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
         <a class="navbar-brand" routerLink="/">OctoFit</a>
         <button
           class="navbar-toggler"
@@ -20,19 +20,42 @@ import { RouterLink } from '@angular/router';
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" routerLink="/">Home</a>
+              <a
+                class="nav-link"
+                routerLink="/"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/users">Users</a>
+              <a class="nav-link" routerLink="/users" routerLinkActive="active"
+                >Users</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/activities">Activities</a>
+              <a
+                class="nav-link"
+                routerLink="/activities"
+                routerLinkActive="active"
+                >Activities</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/leaderboards">Leaderboards</a>
+              <a
+                class="nav-link"
+                routerLink="/leaderboards"
+                routerLinkActive="active"
+                >Leaderboards</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/workouts">Workouts</a>
+              <a
+                class="nav-link"
+                routerLink="/workouts"
+                routerLinkActive="active"
+                >Workouts</a
+              >
             </li>
           </ul>
         </div>

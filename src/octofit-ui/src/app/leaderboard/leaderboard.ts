@@ -1,6 +1,6 @@
 export class Leaderboard {
   id = ''; // GUID string
-  userName = '';
+  username = '';
   email = '';
   score = 0;
 }
