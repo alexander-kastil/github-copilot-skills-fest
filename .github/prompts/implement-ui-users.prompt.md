@@ -10,7 +10,7 @@
 provideRouter(routes, withComponentInputBinding()),
 ```
 
-4. In the UserEditComponent the id signal will be used to get the user data from the service. The id will be passed as a parameter to the edit component using an :id parameter. Angular 19+ will handle this change in the userUpdate effect which is a modern replacement for ngOnChanges. The effect get the user data from the service and patch the form with the data. Stick to this pattern.
+4. In the UserEditComponent the id signal will be used to get the user data from the service. The id will be passed as a parameter to the edit component using an :id parameter. Angular 19+ will handle this change in the userUpdate effect which is a modern replacement for ngOnChanges. The effect get the user data from the service and patch the form with the data. When implementing the Reactive Form, check the corresponding Type in the .NET WebApi and use exactly the property names received from the Api in json, otherwise create and update will fail as the formControlNames will shape the json. If there is a conflict correct it. Stick to this pattern.
 
 ```typescript
 export class UserEditComponent {
@@ -20,10 +20,9 @@ export class UserEditComponent {
 
   userForm = this.fb.group({
     id: [this.user().id, Validators.required],
-    userName: [this.user().userName, Validators.required],
+    username: [this.user().userName, Validators.required],
     email: [this.user().email, [Validators.required, Validators.email]],
     password: [this.user().password, Validators.required],
-    birthDate: [this.user().birthDate]
   });
 
   userUpdate = effect(() => {
