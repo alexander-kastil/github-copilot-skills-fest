@@ -85,11 +85,11 @@ This task implements the front-end user interface by creating Angular components
 
 - Creating the HomeComponent, NavbarComponent, basic routing and the client side models and services by executing the `implement-ui-models.prompt.md` prompt.
 
-> Note: If you want you can test the application after implementing the components using the Playwright MCP Tools that we registered:
+  > Note: If you want you can test the application after implementing the components using the Playwright MCP Tools that we registered:
 
-```prompt
-The octofit-api and octofit-ui are already running. Navigate to `http://localhost:4200/` using the browser and describe the result.
-```
+  ```prompt
+  The octofit-api and octofit-ui are already running. Navigate to `http://localhost:4200/` using the browser and describe the result.
+  ```
 
 - Create the LeaderboardComponent and implement the leaderboard list using the `implement-ui-leaderboard.prompt.md` prompt.
 
