@@ -1,10 +1,8 @@
 # Implement the Angular UI
 
-1. Read the goals of docs/octofit_story.md in mind.
+1. Implement the HomeComponent in `src/octofit-ui/src/app/home` which will be the entry point of the application. The home page will display a welcome message and a centered image of the OctoFit logo.
 
-2. Implement the HomeComponent in `src/octofit-ui/src/app/home` which will be the entry point of the application. The home page will display a welcome message and a centered image of the OctoFit logo.
-
-3. Create a NavbarComponent and add a link to the HomeComponent. Replace the ffollowing code in the `src/octofit-ui/src/app/app.component.html` file with the Navbar:
+2. Create a NavbarComponent and add a link to the HomeComponent. Replace the ffollowing code in the `src/octofit-ui/src/app/app.component.html` file with the Navbar:
 
    ```html
    <div class="text-center">
@@ -12,9 +10,9 @@
    </div>
    ```
 
-4. Configure routing in `app.routes.ts`. Add a route "" for the HomeComponent
+3. Configure routing in `app.routes.ts`. Add a route "" for the HomeComponent
 
-5. Implement the client side models as classes for each entity. The models will be created in the `src/octofit-ui/src/app/{model}/{model}.ts` folder.
+4. Implement the client side models as classes for each entity. The models will be created in the `src/octofit-ui/src/app/{model}/{model}.ts` folder.
 
    ```models
    **User Model**
@@ -42,7 +40,7 @@
    - Workout description (optional)
    ```
 
-6. For each model implement a service in the `src/octofit-ui/src/app/{model}/{service}` folder. The service will use the Angular HttpClient to communicate with the API. The service will have the following methods:
+5. For each model implement a service in the `src/octofit-ui/src/app/{model}/{service}` folder. The service will use the Angular HttpClient to communicate with the API. The service will have the following methods:
 
    - `getAll` - Get all records of the model
    - `getById` - Get a record by id
@@ -50,4 +48,4 @@
    - `update` - Update an existing record
    - `delete` - Delete a record by id
 
-7. Before starting the implementation, share your plan. Keep the order of the tasks. Do not implement anything that you are not asked for. Don't proceed with the next activity until all of these steps are completed.
+6. Before starting the implementation, share your plan. Keep the order of the tasks. Do not implement anything that you are not asked for. Don't proceed with the next activity until all of these steps are completed.
