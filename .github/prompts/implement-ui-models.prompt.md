@@ -1,8 +1,21 @@
 # Implement the Angular UI
 
-1. Implement the HomeComponent in `src/octofit-ui/src/app/home` which will be the entry point of the application. The home page will display a welcome message and a centered image of the OctoFit logo.
+1. Implement the HomeComponent in `src/octofit-ui/src/app/home` which will be the entry point of the application. The home page will display a welcome message and a centered image of the OctoFit logo. Copy docs/assets/images/octofit-logo.png to the `src/octofit-ui/public/` folder.
 
-2. Create a NavbarComponent and add a link to the HomeComponent. Replace the ffollowing code in the `src/octofit-ui/src/app/app.component.html` file with the Navbar:
+2. Add the following item to `angular.json`:
+
+```
+"assets":
+[
+   {
+      "glob": "**/*",
+      "input": "public",
+      "output": "/assets/"
+   }
+],
+```
+
+2. Create a NavbarComponent and add a link to the HomeComponent. Replace the following code in the `src/octofit-ui/src/app/app.component.html` file with the Navbar:
 
    ```html
    <div class="text-center">
