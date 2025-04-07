@@ -6,7 +6,15 @@
 
 3. Implement the HomeComponent which will be the entry point of the application.
 
-4. Implement the client side models as classes for each entity. The models will be created in the `src/octofit-ui/src/app/{model}` folder.
+4. Create a NavbarComponent and add a link to the HomeComponent. Replace the ffollowing code in the `src/octofit-ui/src/app/app.component.html` file with the Navbar:
+
+   ```html
+   <div class="text-center">
+      <h1>Welcome to the OctoFit Tracker App</h1>
+   </div>
+   ```
+
+5. Implement the client side models as classes for each entity. The models will be created in the `src/octofit-ui/src/app/{model}` folder.
 
    ```models
    **User Model**
@@ -34,7 +42,7 @@
    - Workout description (optional)
    ```
 
-5. For each model implement a service in the `src/octofit-ui/src/app/{model}` folder. The service will use the Angular HttpClient to communicate with the API. The service will have the following methods:
+6. For each model implement a service in the `src/octofit-ui/src/app/{model}` folder. The service will use the Angular HttpClient to communicate with the API. The service will have the following methods:
 
    - `getAll` - Get all records of the model
    - `getById` - Get a record by id
@@ -42,4 +50,4 @@
    - `update` - Update an existing record
    - `delete` - Delete a record by id
 
-6. Before starting the implementation, share your plan. Keep the order of the tasks. Don't proceed with the next activity until all of these steps are completed.
+7. Before starting the implementation, share your plan. Keep the order of the tasks. Don't proceed with the next activity until all of these steps are completed.
