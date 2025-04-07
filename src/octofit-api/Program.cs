@@ -1,9 +1,21 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
+
+// Configure SQLite
+builder.Services.AddDbContext<OctoFitApi.OctoFitDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -22,6 +34,13 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+
+// Ensure database is created and migrations are applied
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<OctoFitApi.OctoFitDbContext>();
+    db.Database.EnsureCreated();
+}
 
 // Configure Swagger UI at root URL
 app.UseSwagger();
