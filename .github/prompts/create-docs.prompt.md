@@ -4,7 +4,7 @@
 
 This template provides a structured approach for generating comprehensive documentation across different levels of the project. The documentation should be created in a bottom-up approach, starting with detailed service-level documentation and building up to the project overview.
 
-Skip the folders that are not present in this project. Add top level folders in the same pattern.
+Skip the folders that are not present in this project. Add existing top level folders in the same pattern. Skip the root raedme.md as will as /docs and all its subfolders.
 
 ## Documentation Structure
 

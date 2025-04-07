@@ -1,59 +1,107 @@
-# OctofitUi
+# OctoFit UI Service
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+## Service Overview
 
-## Development server
+### Purpose and Functionality
+The OctoFit UI is an Angular 19-based frontend application that provides the user interface for the OctoFit fitness tracking application. It offers a responsive, modern interface for managing users, tracking activities, managing workouts, and viewing leaderboards.
 
-To start a local development server, run:
+### Key Features
+- Responsive web interface using Bootstrap
+- Standalone components architecture
+- Declarative data handling with Angular Signals
+- Component-based routing
+- CRUD operations for all entities
+- Modern Angular control flow
 
-```bash
-ng serve
-```
+### Tech Stack Breakdown
+- Angular 19
+- TypeScript
+- Bootstrap CSS framework
+- RxJS with Angular Signals
+- Reactive Forms
+- Angular HTTP Client
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Development Guide
 
-## Code scaffolding
+### Prerequisites
+- Node.js 20.12.2
+- Angular CLI 19.2
+- Visual Studio Code
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### DevContainer Configuration
+The service is configured to run in a DevContainer with all necessary Node.js tools and dependencies pre-installed.
 
-```bash
-ng generate component component-name
-```
+### Build and Execution Instructions
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Start development server:
+   ```bash
+   ng serve
+   ```
 
-```bash
-ng generate --help
-```
+The application will be available at http://localhost:4200
 
-## Building
+### Dependencies
+- OctoFit API (Backend service)
 
-To build the project run:
+## Configuration Reference
 
-```bash
-ng build
-```
+| Config Key | Description | Required | Default | Example |
+|------------|-------------|----------|---------|---------|
+| apiUrl | Backend API URL | Yes | http://localhost:5000/api/ | http://api.example.com/api/ |
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Component Structure
 
-## Running unit tests
+### Core Components
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+#### Home Component
+- Entry point of the application
+- Displays welcome message and app logo
 
-```bash
-ng test
-```
+#### Navbar Component
+- Provides navigation across the application
+- Responsive Bootstrap-based design
 
-## Running end-to-end tests
+### Feature Components
 
-For end-to-end (e2e) testing, run:
+#### Users Module
+- UsersComponent: Displays user list in a table
+- UserEditComponent: Form for creating/editing users
 
-```bash
-ng e2e
-```
+#### Activities Module
+- ActivitiesComponent: Shows activity tracking table
+- ActivityEditComponent: Form for logging/editing activities
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+#### Workouts Module
+- WorkoutsComponent: Lists available workout templates
+- WorkoutEditComponent: Form for creating/editing workouts
 
-## Additional Resources
+#### Leaderboard Module
+- LeaderboardComponent: Displays fitness achievement rankings
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Services
+
+Each feature module includes a service that handles API communication:
+
+- UserService
+- ActivityService
+- WorkoutService
+- LeaderboardService
+
+All services follow a consistent pattern with these operations:
+- getAll(): Retrieves all records
+- getById(id: string): Retrieves a single record
+- create(entity: T): Creates a new record
+- update(id: string, entity: T): Updates an existing record
+- delete(id: string): Removes a record
+
+## Development Standards
+- Uses standalone components
+- Implements Angular Control Flow syntax
+- Uses Angular inject() function for dependency injection
+- Converts Observables to Signals using toSignal()
+- Follows camelCase naming convention
+- Uses Angular environment configuration
