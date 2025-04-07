@@ -114,8 +114,6 @@ The data models for the OctoFit Tracker consist of the following entities. The a
 
 Our serialization format is camelCase. Configure it in Program.cs
 
-- When creating the `OctoFitDbContext`, use `OnModelCreating` to configure the models and seed the database with the data from `seeding_data.json`.
-
 - Implement other Entity Related Task in the `OctoFitDbContext` class if possible.
 
 ### Controller implementation
