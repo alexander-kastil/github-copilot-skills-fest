@@ -73,7 +73,7 @@ This task focuses on setting up the back-end API functionality including data mo
 
 - Use `implement-api.prompt.md` to implement the Web API
 
-> Note: You can check the result by executing the following command in the terminal and call a method using the swagger UI:
+> Note: You can smoke test the result by executing the following command in the terminal and call a method using the swagger UI:
 
 ```bash
 dotnet run
