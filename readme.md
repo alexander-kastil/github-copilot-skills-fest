@@ -1,6 +1,6 @@
 # Build applications with GitHub Copilot agent mode
 
-This repository features a Vibe Coding Guide for a fitness tracking application, utilizing GitHub Copilot. It includes a [prompt guide](docs/readme.md) designed to meet the objectives of the [Microsoft Skills Fest](https://aiskillsfest.event.microsoft.com/).
+This repository features a Vibe Coding Guide for a fitness tracking application, utilizing GitHub Copilot. It includes a [Prompt Guide](docs/readme.md) designed to meet the objectives of the [Microsoft Skills Fest](https://aiskillsfest.event.microsoft.com/).
 
 - **Task 1**: Work with GitHub
 - **Task 2**: Setup Coding Instructions & Tooling
