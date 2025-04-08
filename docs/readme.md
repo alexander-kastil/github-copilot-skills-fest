@@ -7,7 +7,7 @@
 - **Task 5**: Implement the Angular Frontend
 - **Task 6**: Add project documentation using a reusable prompt
 
-The Tasks were executed by the GutHub Copilot Agent mostly using Claude Sonnet 3.5 with these [Visual Studio Code Settings](/prompts/assets/general/settings.json)
+The Tasks were executed by the GutHub Copilot Agent mostly using Claude Sonnet 3.5 with these [Visual Studio Code Settings](/docs/assets/settings.json)
 
 ![settings](./images/agent.jpg)
 
