@@ -16,15 +16,15 @@ import { User } from './user';
       <div class="card-body">
         <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
           <div class="mb-3">
-            <label for="userName" class="form-label">Username</label>
+            <label for="username" class="form-label">Username</label>
             <input
               type="text"
               class="form-control"
-              id="userName"
-              formControlName="userName"
+              id="username"
+              formControlName="username"
               required
             />
-            @if (userForm.get('userName')?.errors?.['required'] && userForm.get('userName')?.touched) {
+            @if (userForm.get('username')?.errors?.['required'] && userForm.get('username')?.touched) {
               <small class="text-danger">Username is required</small>
             }
           </div>
@@ -83,7 +83,7 @@ export class UserEditComponent {
 
   userForm = this.fb.group({
     id: [this.user.id],
-    userName: [this.user.userName, Validators.required],
+    username: [this.user.username, Validators.required],
     email: [this.user.email, [Validators.required, Validators.email]],
     password: [this.user.password, Validators.required],
   });

@@ -25,7 +25,7 @@
 
 3. Configure routing in `app.routes.ts`. Add a route "" for the HomeComponent
 
-4. Implement the client side models as classes for each entity. The models will be created in the `src/octofit-ui/src/app/{model}/{model}.ts` folder.
+4. Implement the client side models as classes for each entity. The models will be created in the `src/octofit-ui/src/app/{model}/{model}.ts` folder. Take the JsonPropertyName attribute from the corresponding webapi c# models as a reference for the property names:
 
    ```models
    **User Model**

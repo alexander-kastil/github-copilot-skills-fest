@@ -25,7 +25,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
         <tbody>
           @for (user of users(); track user.id) {
             <tr>
-              <td>{{ user.userName }}</td>
+              <td>{{ user.username }}</td>
               <td>{{ user.email }}</td>
               <td>
                 <button class="btn btn-sm btn-primary me-2" [routerLink]="['edit', user.id]">

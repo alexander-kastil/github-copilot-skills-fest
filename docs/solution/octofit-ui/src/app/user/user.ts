@@ -1,6 +1,6 @@
 export class User {
   id = ''; // GUID string
-  userName = '';
+  username = '';
   email = '';
   password = '';
 }
