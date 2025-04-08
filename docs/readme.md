@@ -16,7 +16,7 @@ The Tasks were executed by the GutHub Copilot Agent mostly using Claude Sonnet 3
 This task is an introduction to using GitHub Copilot in a collaborative environment. It covers creation of a branch, committing changes and creating pull requests.
 
 ```prompt
-Create a new branch '<name>-solution' and switch to it
+Create a new branch '<your-firstname>-solution' and switch to it
 ```
 
 After switching to the new branch, delete the src folder and commit the changes.
