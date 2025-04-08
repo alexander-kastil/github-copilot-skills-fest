@@ -3,9 +3,11 @@
 ## Service Overview
 
 ### Purpose and Functionality
+
 The OctoFit API is a .NET 9-based RESTful service that provides backend functionality for the OctoFit fitness tracking application. It handles user management, activity tracking, workout management, and leaderboard functionality.
 
 ### Key Features
+
 - User management (CRUD operations)
 - Activity logging and tracking
 - Workout template management
@@ -14,6 +16,7 @@ The OctoFit API is a .NET 9-based RESTful service that provides backend function
 - SQLite database with Entity Framework Core
 
 ### Tech Stack Breakdown
+
 - .NET 9
 - Entity Framework Core
 - SQLite Database
@@ -24,20 +27,25 @@ The OctoFit API is a .NET 9-based RESTful service that provides backend function
 ## Development Guide
 
 ### Prerequisites
+
 - .NET 9 SDK
 - Visual Studio Code or Visual Studio 2022
 - SQLite tools (optional)
 
 ### DevContainer Configuration
+
 The service is configured to run in a DevContainer with all necessary .NET tools and dependencies pre-installed.
 
 ### Build and Execution Instructions
+
 1. Restore dependencies:
+
    ```bash
    dotnet restore
    ```
 
 2. Build the project:
+
    ```bash
    dotnet build
    ```
@@ -48,25 +56,28 @@ The service is configured to run in a DevContainer with all necessary .NET tools
    ```
 
 The API will be available at:
+
 - HTTP: http://localhost:5000
 - Swagger UI: http://localhost:5000/
 
 ### Dependencies
+
 - OctoFit UI (Frontend application)
 
 ## Configuration Reference
 
-| Config Key | Description | Required | Default | Example |
-|------------|-------------|----------|---------|---------|
-| ConnectionStrings:DefaultConnection | SQLite connection string | Yes | Data Source=octofit.db | Data Source=./octofit.db |
-| Logging:LogLevel:Default | Default logging level | No | Information | Warning |
-| AllowedHosts | CORS allowed hosts | No | * | * |
+| Config Key                          | Description              | Required | Default                | Example                  |
+| ----------------------------------- | ------------------------ | -------- | ---------------------- | ------------------------ |
+| ConnectionStrings:DefaultConnection | SQLite connection string | Yes      | Data Source=octofit.db | Data Source=./octofit.db |
+| Logging:LogLevel:Default            | Default logging level    | No       | Information            | Warning                  |
+| AllowedHosts                        | CORS allowed hosts       | No       | \*                     | \*                       |
 
 ## API Endpoints
 
 The API provides the following main endpoints:
 
 ### Users
+
 - GET /api/users - Get all users
 - GET /api/users/{id} - Get user by ID
 - POST /api/users - Create new user
@@ -74,6 +85,7 @@ The API provides the following main endpoints:
 - DELETE /api/users/{id} - Delete user
 
 ### Activities
+
 - GET /api/activities - Get all activities
 - GET /api/activities/{id} - Get activity by ID
 - POST /api/activities - Create new activity
@@ -81,6 +93,7 @@ The API provides the following main endpoints:
 - DELETE /api/activities/{id} - Delete activity
 
 ### Workouts
+
 - GET /api/workouts - Get all workouts
 - GET /api/workouts/{id} - Get workout by ID
 - POST /api/workouts - Create new workout
@@ -88,6 +101,7 @@ The API provides the following main endpoints:
 - DELETE /api/workouts/{id} - Delete workout
 
 ### Leaderboards
+
 - GET /api/leaderboards - Get all leaderboard entries
 - GET /api/leaderboards/{id} - Get leaderboard entry by ID
 - POST /api/leaderboards - Create new leaderboard entry
