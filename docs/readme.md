@@ -23,7 +23,7 @@ After switching to the new branch, delete the src folder and commit the changes.
 
 > Note: Do not worry about the deletion as the solution is still available in the master branch and for your reference in [/docs/solution](/docs/solution/).
 
-## Task 2: Setup Coding Instructions & Tooling
+## Task 2: Setup Coding Instructions & Tooling (optional)
 
 This task install some Copilot Settings and Tools and establishes the foundation for our fitness tracking application according to `docs/octofit_story.md`
 
