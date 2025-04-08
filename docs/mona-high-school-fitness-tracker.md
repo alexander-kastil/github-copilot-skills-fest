@@ -75,6 +75,9 @@ Copy `docs/assets/mcp.json` to .vscode/mcp.json
 
 ## Task 3: Implement the Web Api
 
+- Scaffold the webapi using: dotnet new webapi -n octofit-api
+- Scaffold the frontend using: ng new octofit-ui --routing --skip-install --skip-git --skip-tests --style=scss
+
 ### SQLite Database, Entity Framework Core and Database Context
 
 - This app is using a SQLite database using Entity Framework Core with a `OctoFitDbContext` class in the Data folder that will be registered in `Program.cs`. For simplicity, the database will be create in `src/octofit-api/octofit.db` path of the project. appsettings.json will be used to configure the database connection string. The database will be created automatically when the application starts.

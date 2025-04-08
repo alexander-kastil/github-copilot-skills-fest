@@ -1,6 +1,6 @@
 # Task 1: Setup Coding Instructions & Tooling
 
-### Coding Instructions
+## Coding Instructions
 
 Add code generation instructions by creating .vscode/settings.json in the root of the project with the following content:
 
