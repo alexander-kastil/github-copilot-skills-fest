@@ -115,3 +115,5 @@ Replace the following placeholders with actual content:
 - `{value}`: Default value
 - `{y/n}`: Yes/No for required fields
 - `{ex}`: Example value
+
+6. Before starting the implementation, share your plan. Keep the order of the tasks. Don't proceed with the next activity until all of these steps are completed.
