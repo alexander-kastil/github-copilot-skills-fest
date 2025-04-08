@@ -37,7 +37,7 @@ This task install some Copilot Settings and Tools and establishes the foundation
 
 - Create a development container configuration for consistent environments and easy onboarding of new team members by attaching the re-usable prompt `create-dev-container.prompt.md` with the paperclip icon in the GitHub Copilot chat:
 
-> Note: Skip this step as we have already created the devcontainer.json to meet our 45 min time limit. Building the container image takes a while. The prompt is included for reference.
+  > Note: Skip this step as we have already created the devcontainer.json to meet our 45 min time limit. Building the container image takes a while. The prompt is included for reference.
 
 ```prompt
 Create the devcontainer for the project.
